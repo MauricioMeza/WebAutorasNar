@@ -28,7 +28,7 @@ const data = [
     { "year": 2016, "artist": "Artist A", "work": "Work 13" },
 ];
 
-const margin = {top: 20, right: 20, bottom: 20, left: 50};
+const margin = {top: 20, right: 20, bottom: 100, left: 50};
 const squareSize = 40;
 
 // Get the width and height of the SVG dynamically
