@@ -5,30 +5,63 @@ body{
     text-align: center;
 }
 nav{
-    padding: 15px;
-    background-color: beige;
+    height: 70px;
+    background-color: #271f44;
+    position: relative;
 }
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 4vw;
+    position: absolute;
+    width: 100%;
+    /* Position to overlap the nav */
+    top: 15px;
+}
+
+.nav-btn{
+    width: 80px;
+    height: auto;
+}
+
 section{
     width: 100%;
     height: 100vh;
     padding: 5px 0 5px 0;
 }
-
 /*---------------------*/
 /*------Portada-------*/
 /*-------------------*/
 #portada{
     height: 90vh;
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
+    background-color: #896ab0;
 }
+#banner{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+#portada-txt{
+    background-color: #271f44;
+    color: #fffaff;
+    padding: 20px;
+    margin: 50px 15vw 20px 15vw;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#portada-title{
+    margin-top: -50px;
+}
+
 
 /*--------------------*/
 /*------ Mapa -------*/
 /*------------------*/
 #territorio{
-    background-color: beige;
+    background-color: #896ab0;
 }
 #mapa{
     width: 90%;
@@ -39,7 +72,7 @@ section{
 /*------ Tiempo -------*/
 /*--------------------*/
 #tiempo{
-
+    background-color: #896ab0;
 }
 svg {
     width: 99%;
@@ -80,5 +113,5 @@ svg {
 /*--------------------*/
 footer{
     padding: 15px;
-    background-color: beige;
+    background-color: #271f44;
 }
