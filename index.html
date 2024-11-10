@@ -7,6 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+    <!-------------------------------------->
+    <!------------NAVIGATION BAR------------>
+    <!-------------------------------------->
     <nav>
         <ul class="nav-list">
             <li>
@@ -25,12 +28,11 @@
                 </a>
             </li>
         </ul>
-        <!--
-        <a href="#portada"><img class="nav-btn" src="./assets/BOTON-INICIO.png"></a>
-        <a href="#territorio"><img class="nav-btn" src="./assets/BOTON-TERRITORIO.png"></a>
-        <a href="#tiempo"><img class="nav-btn" src="./assets/BOTON-TIEMPO.png"></a>
-        -->
     </nav>
+
+    <!-------------------------------------->
+    <!------------PORTADA-BANNER------------>
+    <!-------------------------------------->
     <section id="portada">
         <img id="banner" src="./assets/BANNER-PORTADA-WEB.jpg">
         <div id="portada-txt">
@@ -38,17 +40,69 @@
             <p>Este es un espacio interactivo donde convergen las voces, palabras y pensamientos de mujeres dramaturgas. Adéntrate en sus historias, emociones y visiones capturadas a través de textos, videos, fotografías y más, en un recorrido que refleja la creación y la potencia que nutren el teatro nariñense.</p>
         </div>
     </section>
-    <section id="territorio">
-        <h1>Territorio</h1>
-        <p>Pequeña descripcion de los que se presenta en el mapa</p>
-        <iframe id="mapa" src="https://www.google.com/maps/d/embed?mid=1el_FtwRlLISqL3g54udxrzbvpdnL-Ww&ehbc=2E312F"></iframe>
+
+    <!------------------------------------------>
+    <!------------TERRITORIO-SECCION------------>
+    <!------------------------------------------>
+    <section id="territorio" class="section-content">
+
+        <div class="content-title">
+            <img class="content-title-img" src="./assets/BOTON-TERRITORIO2.png">
+        </div>
+        <div class="content-desc">
+            <span class="content-desc-border">
+                <p class="p-subtitle">Pequeña descripcion de los que se presenta en el mapa de territorio</p>
+            </span>
+        </div>
+        <div class="content-info">
+            <iframe id="mapa" src="https://www.google.com/maps/d/embed?mid=1el_FtwRlLISqL3g54udxrzbvpdnL-Ww&ehbc=2E312F" ></iframe></iframe>
+            <!--src="https://www.google.com/maps/d/embed?mid=1el_FtwRlLISqL3g54udxrzbvpdnL-Ww&ehbc=2E312F"-->
+        </div>
     </section>
-    <section id="tiempo">
-        <h1>Linea de Tiempo</h1>
-        <p>Pequeña descripcion de los que se presenta en la linea de tiempo</p>
-        <svg></svg>
-        <div class="tooltip"></div>
+
+    <!---------------------------------------->
+    <!-------------TIEMPO-SECCION------------->
+    <!---------------------------------------->
+    <section id="tiempo" class="section-content">
+        <div class="content-title">
+            <img class="content-title-img" src="./assets/BOTON-TIEMPO2.png">
+        </div>
+        <div class="content-desc desc2">
+            <span class="content-desc-border-2">
+                <p class="p-subtitle">Pequeña descripcion de los que se presenta en la linea de tiempo</p>
+            </span>
+        </div>
+        <div class="content-info time">
+            <div>
+                <span>
+                    <h3 class="time-year">1992</h3>
+                    <div class="time-card"></div>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <h3 class="time-year">2000</h3>
+                    <div class="time-card"></div>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <h3 class="time-year">2002</h3>
+                    <div class="time-card"></div>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <h3 class="time-year">2004</h3>
+                    <div class="time-card"></div>
+                </span>
+            </div>
+        </div>
     </section>
+
+    <!------------------------------------>
+    <!---------------FOOTER--------------->
+    <!------------------------------------>
     <footer>
         Una plataforma de + Mujeres + Arte + Cultura
     </footer>

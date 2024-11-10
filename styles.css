@@ -3,6 +3,7 @@ body{
     padding: 0;
     scroll-behavior: smooth;
     text-align: center;
+    color: #fffaff;
 }
 nav{
     height: 70px;
@@ -26,12 +27,65 @@ nav{
     width: 80px;
     height: auto;
 }
-
 section{
     width: 100%;
     height: 100vh;
-    padding: 5px 0 5px 0;
+    padding: 10px 0 0 0;
 }
+.content-title{
+    height: 15vh;
+}
+.content-desc{
+    height: 10vh;
+    background-color: #9f516f;
+    font-size: 18px;
+    display: grid;
+    place-items: center;
+}
+.content-desc-border{
+    background-color: #ae96c7;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    width: 80%;
+}
+.desc2{
+    background-color: #783954;
+}
+.content-desc-border-2{
+    background-color: #a05170;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    width: 80%;
+    border-radius: 10vh 0 10vh 0;
+}
+.p-subtitle{
+    margin: 0 15px 0 15px;
+}
+.content-info{
+    height: 75vh;
+    background-color: #271f44;
+    display: grid;
+    place-items: center;
+}
+.time{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px; /* Exact 20px gap */
+    align-items: center;
+    justify-content: start; /* Or center, depending on preference */
+    max-width: fit-content; /* Prevents items from stretching out too far */
+    margin: auto; /* Centers the container */
+}
+.map{
+
+}
+
+.content-title-img{
+    height: 100%;
+}
+
 /*---------------------*/
 /*------Portada-------*/
 /*-------------------*/
@@ -46,12 +100,16 @@ section{
 }
 #portada-txt{
     background-color: #271f44;
-    color: #fffaff;
     padding: 20px;
     margin: 50px 15vw 20px 15vw;
     border-radius: 10px;
     font-size: 20px;
 }
+@media screen and (max-width: 350px) {
+    #portada-txt{
+        font-size: 16px;
+    }
+  }
 #portada-title{
     margin-top: -50px;
 }
@@ -65,14 +123,14 @@ section{
 }
 #mapa{
     width: 90%;
-    height: 80vh;
+    height: 70vh;
 }
 
 /*----------------------*/
 /*------ Tiempo -------*/
 /*--------------------*/
 #tiempo{
-    background-color: #896ab0;
+    background-color: #271f44;
 }
 svg {
     width: 99%;
@@ -107,11 +165,22 @@ svg {
     stroke: black;
     stroke-width: 1px;
 }
+.time-card{
+    background-color: #a996c5;
+    height: 300px;
+    width: 150px;
+    border-radius: 20px;
+}
+.time-year{
+    margin: 0;
+    font-size: 50px;
+    color: #a996c5;
+}
 
 /*----------------------*/
 /*------ Footer -------*/
 /*--------------------*/
 footer{
     padding: 15px;
-    background-color: #271f44;
+    background-color: #896ab0;
 }
