@@ -5,11 +5,16 @@ body{
     text-align: center;
     color: #fffaff;
 }
+
+/*------------------------*/
+/*--------NavBar---------*/
+/*----------------------*/
 nav{
     height: 70px;
     background-color: #271f44;
     position: relative;
 }
+
 .nav-list {
     display: flex;
     justify-content: center;
@@ -19,7 +24,6 @@ nav{
     gap: 4vw;
     position: absolute;
     width: 100%;
-    /* Position to overlap the nav */
     top: 15px;
 }
 
@@ -27,6 +31,15 @@ nav{
     width: 80px;
     height: auto;
 }
+.nav-btn:hover{
+    width: 100px;
+    height: auto;
+}
+
+/*--------------------------*/
+/*--------Sections---------*/
+/*------------------------*/
+
 section{
     width: 100%;
     height: 100vh;
@@ -69,26 +82,13 @@ section{
     display: grid;
     place-items: center;
 }
-.time{
-    display: grid;
-    grid-auto-flow: column;
-    gap: 20px; /* Exact 20px gap */
-    align-items: center;
-    justify-content: start; /* Or center, depending on preference */
-    max-width: fit-content; /* Prevents items from stretching out too far */
-    margin: auto; /* Centers the container */
-}
-.map{
-
-}
-
 .content-title-img{
     height: 100%;
 }
 
-/*---------------------*/
-/*------Portada-------*/
-/*-------------------*/
+/*-------------------------*/
+/*--------Portada---------*/
+/*-----------------------*/
 #portada{
     height: 90vh;
     background-color: #896ab0;
@@ -96,14 +96,15 @@ section{
 #banner{
     width: 100%;
     height: auto;
-    margin-top: 40px;
+    margin-top: 25px;
 }
 #portada-txt{
     background-color: #271f44;
     padding: 20px;
-    margin: 50px 15vw 20px 15vw;
+    margin: 25px 5vw 10px 5vw;
     border-radius: 10px;
     font-size: 20px;
+    
 }
 @media screen and (max-width: 350px) {
     #portada-txt{
@@ -112,6 +113,12 @@ section{
   }
 #portada-title{
     margin-top: -50px;
+}
+#portada-txt-border{
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #783e57;
+    margin: 5px 10vw 5px 10vw;
 }
 
 
@@ -132,34 +139,15 @@ section{
 #tiempo{
     background-color: #271f44;
 }
-svg {
-    width: 99%;
-    height: 75vh;
-}
-
-.year-group {
-    font-family: sans-serif;
-}
-.year-label {
-    font-size: 10px; /* Smaller font size for the years */
-    text-anchor: middle;
-}
-.work-square {
-    font-size: 14px;
-    font-weight: bold;
-    text-anchor: middle;
-    alignment-baseline: middle;
-}
-.tooltip {
-    position: absolute;
-    text-align: center;
-    padding: 8px;
-    font-size: 12px;
-    background: lightgray;
-    border: 1px solid #000;
-    border-radius: 4px;
-    pointer-events: none;
-    visibility: hidden;
+.time{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px; /* Exact 20px gap */
+    align-items: center;
+    justify-content: start; /* Or center, depending on preference */
+    max-width: fit-content; /* Prevents items from stretching out too far */
+    margin: auto; /* Centers the container */
+    overflow-x: auto;
 }
 .line {
     stroke: black;
@@ -171,10 +159,62 @@ svg {
     width: 150px;
     border-radius: 20px;
 }
+.time-card:hover{
+    cursor: pointer;
+    height: 310px;
+    width: 155px; 
+}
 .time-year{
     margin: 0;
     font-size: 50px;
     color: #a996c5;
+}
+
+/*----------------------*/
+/*------ Footer -------*/
+/*--------------------*/
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Keeps it on top of other elements */
+    display: none;
+}
+
+/* Centered popup box */
+.popup{
+    position: relative;
+    background: #271f44;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    max-width: 800px;
+    width: 80%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 4fr 3fr; 
+}
+#popup-content{
+
+}
+#popup-img{
+    background-color:#a996c5;
+}
+
+#popup-close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #783e57;
+    color: #fffaff;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 /*----------------------*/
