@@ -253,6 +253,7 @@ hr{
     border-radius: 10px 0 0 10px;
     text-align: center;
     max-width: 800px;
+    max-height: 420px;
     width: 85%;
     height: 65%;
     display: flex;
