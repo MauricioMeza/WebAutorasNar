@@ -4,7 +4,33 @@ body{
     scroll-behavior: smooth;
     text-align: center;
     color: #fffaff;
+    font-family: 'Quicksand', serif;
 }
+@font-face {
+    font-family: 'Quicksand';
+    src: url("./assets/Fonts/Quicksand (Textos)/Quicksand-VariableFont_wght.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Uravika';
+    src: url("./assets/Fonts/Uravika (Titulos)/Uravika Classy.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+p{
+    font-family: 'Quicksand', serif;
+}
+h1{
+    font-family: 'Uravika', serif;
+}
+h2{
+    font-family: 'Uravika', serif;
+}
+h3{
+    font-family: 'Uravika', serif;
+}
+
 
 /*------------------------*/
 /*--------NavBar---------*/
@@ -54,6 +80,7 @@ section{
     font-size: 18px;
     display: grid;
     place-items: center;
+    font-size: 16px;
 }
 .content-desc-border{
     background-color: #ae96c7;
@@ -98,13 +125,22 @@ section{
     height: auto;
     margin-top: 25px;
 }
-#portada-txt{
+#portada-info{
     background-color: #271f44;
-    padding: 20px;
-    margin: 25px 5vw 10px 5vw;
+    padding: 25px;
+    margin: 30px 15vw 10px 15vw;
     border-radius: 10px;
-    font-size: 20px;
-    
+    font-size: 18px;
+    border-style: solid;
+    border-color: #783e57;
+    border-width: 1px;
+}
+#portada-txt{
+    margin: -30px 0 0 0;
+}
+#portada-img{
+    height: 6vw;
+    width: auto;
 }
 @media screen and (max-width: 350px) {
     #portada-txt{
@@ -112,13 +148,9 @@ section{
     }
   }
 #portada-title{
-    margin-top: -50px;
-}
-#portada-txt-border{
-    border-style: solid;
-    border-radius: 10px;
-    border-color: #783e57;
-    margin: 5px 10vw 5px 10vw;
+    font-size: 38px;
+    margin-top: -45px;
+    font-weight: lighter;
 }
 
 
@@ -132,12 +164,17 @@ section{
     width: 90%;
     height: 70vh;
 }
+.map{
+    background-image: url("./assets/BASE-MAPA-WEB-VOCES-DE-MUJ-ESCENA.jpg");
+    background-size: 100% 100%;
+}
 
 /*----------------------*/
 /*------ Tiempo -------*/
 /*--------------------*/
 #tiempo{
     background-color: #271f44;
+    position: relative;
 }
 .time{
     display: grid;
@@ -148,10 +185,16 @@ section{
     max-width: fit-content; /* Prevents items from stretching out too far */
     margin: auto; /* Centers the container */
     overflow-x: auto;
+    overflow-y: hidden;
 }
 .line {
     stroke: black;
     stroke-width: 1px;
+}
+.time-container{
+    position: relative;
+    display: inline-block;
+    margin-top: -4vh;
 }
 .time-card{
     background-color: #a996c5;
@@ -159,15 +202,32 @@ section{
     width: 150px;
     border-radius: 20px;
 }
+.time-icon{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    bottom: -9vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .time-card:hover{
     cursor: pointer;
     height: 310px;
     width: 155px; 
 }
 .time-year{
-    margin: 0;
-    font-size: 50px;
+    margin: 0 0 -20px 0;
+    font-size: 60px;
     color: #a996c5;
+}
+hr{
+    position: absolute;
+    margin: 0;
+    width: 98vw;
+    bottom: 9vh;
+    border-color: #a996c5;
+    border-width: 2px;
+    border-style: solid;
 }
 
 /*----------------------*/
@@ -200,13 +260,40 @@ section{
     grid-template-columns: 4fr 3fr; 
 }
 #popup-content{
-
+    text-align: left;
+    padding: 20px 30px 20px 30px;
 }
 #popup-img{
     background-color:#a996c5;
 }
-
-#popup-close{
+.popup-info{
+    display: flex;
+    align-items: center;
+    margin: 15px 0 15px 0;
+}
+.popup-info-icon{
+    height: 25x;
+    width: 25px;
+}
+.popup-info-text{
+    margin-left: 10px;
+}
+.popup-title{
+    margin-top: 40px;
+    font-weight: lighter;
+    font-size: 30px;
+    text-align: right;
+}
+.popup-data{
+    text-align: justify;
+}
+.popup-city{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+}
+/*#popup-close{
     position: absolute;
     top: 5px;
     right: 5px;
@@ -215,6 +302,18 @@ section{
     font-weight: bolder;
     cursor: pointer;
     border-radius: 5px;
+}*/
+#popup-close-img{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+#popup-close-img:hover{
+    width: 32px;
+    height: 32px;
 }
 
 /*----------------------*/

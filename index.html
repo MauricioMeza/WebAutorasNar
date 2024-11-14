@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>+Mujeres+Arte+Cultura </title>
 </head>
 <body>
     <!-------------------------------------->
@@ -36,11 +36,12 @@
     <section id="portada">
         <img id="banner" src="./assets/BANNER-PORTADA-WEB.jpg">
         <div id="portada-txt-border">
-            <div id="portada-txt">
+            <div id="portada-info">
                 <h1 id="portada-title">Dramaturgas de Nariño</h1>
-                <p>Este es un espacio interactivo donde convergen las voces, palabras y pensamientos de mujeres dramaturgas. Adéntrate en sus historias, emociones y visiones capturadas a través de textos, videos, fotografías y más, en un recorrido que refleja la creación y la potencia que nutren el teatro nariñense.</p>
+                <p id="portada-txt">Este es un espacio interactivo donde convergen las voces, palabras y pensamientos de mujeres dramaturgas. Adéntrate en sus historias, emociones y visiones capturadas a través de textos, videos, fotografías y más, en un recorrido que refleja la creación y la potencia que nutren el teatro nariñense.</p>
             </div>
         </div>
+        <img id="portada-img" src="./assets/PORTADA-WEB-VOCES-DE-MUJ-ESCENA-logos.png">
     </section>
 
     <!------------------------------------------>
@@ -56,8 +57,8 @@
                 <p class="p-subtitle">Pequeña descripcion de los que se presenta en el mapa de territorio</p>
             </span>
         </div>
-        <div class="content-info">
-            <iframe id="mapa" ></iframe></iframe>
+        <div class="content-info map">
+            <iframe id="mapa" src="https://www.google.com/maps/d/embed?mid=1el_FtwRlLISqL3g54udxrzbvpdnL-Ww&ehbc=2E312F"></iframe></iframe>
             <!--src="https://www.google.com/maps/d/embed?mid=1el_FtwRlLISqL3g54udxrzbvpdnL-Ww&ehbc=2E312F"-->
         </div>
     </section>
@@ -75,28 +76,33 @@
             </span>
         </div>
         <div class="content-info time">
-            <div onclick="openPopup()">
-                <span>
+            <hr>
+            <div>
+                <span class="time-container">
                     <h3 class="time-year">1992</h3>
-                    <div onclick="openPopup()" class="time-card"></div>
+                    <img src="./assets/FOTO-LINEA-DE-TIEMPO.png" onclick="openPopup()" class="time-card">
+                    <img src="./assets/ICONO-DRAMATURGA-LINEA-DE-TIEMPO.png" class="time-icon">
                 </span>
             </div>
             <div>
-                <span>
+                <span class="time-container">
                     <h3 class="time-year">2000</h3>
-                    <div onclick="openPopup()" class="time-card"></div>
+                    <img src="./assets/FOTO-LINEA-DE-TIEMPO.png" onclick="openPopup()" class="time-card">
+                    <img src="./assets/ICONO-DRAMATURGA-LINEA-DE-TIEMPO.png" class="time-icon">
                 </span>
             </div>
             <div >
-                <span>
+                <span class="time-container">
                     <h3 class="time-year">2002</h3>
-                    <div onclick="openPopup()" class="time-card"></div>
+                    <img src="./assets/FOTO-LINEA-DE-TIEMPO.png" onclick="openPopup()" class="time-card">
+                    <img src="./assets/ICONO-DRAMATURGA-LINEA-DE-TIEMPO.png" class="time-icon">
                 </span>
             </div>
             <div>
-                <span >
+                <span class="time-container">
                     <h3 class="time-year">2004</h3>
-                    <div onclick="openPopup()" class="time-card"></div>
+                    <img src="./assets/FOTO-LINEA-DE-TIEMPO.png" onclick="openPopup()" class="time-card">
+                    <img src="./assets/ICONO-DRAMATURGA-LINEA-DE-TIEMPO.png" class="time-icon">
                 </span>
             </div>
         </div>
@@ -107,9 +113,28 @@
     <!------------------------------------>
     <div class="overlay">
         <div class="popup">
-            <button id="popup-close" onclick="closePopup()">X</button>
-            <div id="popup-content"></div>
-            <div id="popup-img"></div>
+            <img id="popup-close-img" src="assets/BOTÓN-EXIT.png" onclick="closePopup()">
+            <div id="popup-content">
+                <div class="popup-info">
+                    <img class="popup-info-icon" src="./assets/ÍCONO-RECORRIDO.png">
+                    <span class="popup-info-text">Experiencia - <b>00 Años</b></span>
+                </div>
+                <div class="popup-info">
+                    <img class="popup-info-icon" src="./assets/ÍCONO-ÁREAS.png">
+                    <span class="popup-info-text">Areas - <b>Area1, Area2, Area3</b></span>
+                </div>
+                <div>
+                    <h2 class="popup-title">Nombre de la Autora</h2>
+                </div>
+                <div >
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+            </div>
+            <div id="popup-img">
+                <div class="popup-city">
+                    <p> Nacimiento, <b>Ciudad</b>, Año</p>
+                </div>
+            </div>
         </div>
     </div>
 

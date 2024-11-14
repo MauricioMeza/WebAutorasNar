@@ -2,6 +2,6 @@ function openPopup() {
     document.querySelector('.overlay').style.display = 'flex';
   }
   
-  function closePopup() {
+function closePopup() {
     document.querySelector('.overlay').style.display = 'none';
 }
