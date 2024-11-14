@@ -5,6 +5,7 @@ body{
     text-align: center;
     color: #fffaff;
     font-family: 'Quicksand', serif;
+    overflow-x: hidden;
 }
 @font-face {
     font-family: 'Quicksand';
@@ -295,7 +296,7 @@ hr{
     margin-left: 10px;
 }
 .popup-title{
-    max-height: 50px;
+    max-height: 40px;
     overflow: hidden;
     margin: 30px 0 0 0;
     font-weight: lighter;
