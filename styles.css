@@ -146,7 +146,7 @@ section{
     #portada-txt{
         font-size: 16px;
     }
-  }
+}
 #portada-title{
     font-size: 38px;
     margin-top: -45px;
@@ -246,7 +246,18 @@ hr{
     z-index: 1000; /* Keeps it on top of other elements */
     display: none;
 }
-
+.underlay{
+    position: relative;
+    background: #ffffff3b;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    max-width: 800px;
+    width: 85%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* Centered popup box */
 .popup{
     position: relative;
@@ -254,10 +265,15 @@ hr{
     border-radius: 10px 0 0 10px;
     text-align: center;
     max-width: 800px;
-    width: 80%;
-    height: 60vh;
     display: grid;
-    grid-template-columns: 4fr 3fr; 
+    grid-template-columns: 4fr 3fr;
+    width: 96%;
+    height: 94%;
+}
+@media screen and (max-width: 620px) {
+    .popup{
+        grid-template-columns: 1fr;
+    }
 }
 #popup-content{
     text-align: left;
@@ -279,13 +295,24 @@ hr{
     margin-left: 10px;
 }
 .popup-title{
-    margin-top: 40px;
+    max-height: 50px;
+    overflow: hidden;
+    margin: 30px 0 0 0;
     font-weight: lighter;
     font-size: 30px;
     text-align: right;
 }
+@media screen and (max-width: 360px) {
+    .popup-title{
+        font-size: 24px;
+    }
+}
 .popup-data{
     text-align: justify;
+    max-height: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
 }
 .popup-city{
     position: absolute;
@@ -293,16 +320,17 @@ hr{
     right: 0;
     margin-right: 20px;
 }
-/*#popup-close{
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    background-color: #783e57;
-    color: #fffaff;
-    font-weight: bolder;
+.popup-button-container{
+    text-align: center;
+    margin-top: 0px;
+}
+.popup-button{
+    width: 50%;
     cursor: pointer;
-    border-radius: 5px;
-}*/
+}
+.popup-button:hover{
+    width: 52%;
+}
 #popup-close-img{
     position: absolute;
     top: 5px;
@@ -312,8 +340,8 @@ hr{
     cursor: pointer;
 }
 #popup-close-img:hover{
-    width: 32px;
-    height: 32px;
+    width: 31px;
+    height: 30px;
 }
 
 /*----------------------*/
