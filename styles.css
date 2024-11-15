@@ -283,6 +283,8 @@ hr{
 }
 #popup-img{
     background-color:#a996c5;
+    background-position: center;
+    background-size: cover;
 }
 .popup-info{
     display: flex;
@@ -295,11 +297,11 @@ hr{
 }
 .popup-info-text{
     margin-left: 10px;
-    max-height: 30px;
+    max-height: 40px;
     overflow: hidden;
 }
 .popup-title{
-    max-height: 40px;
+    max-height: 34px;
     overflow: hidden;
     margin: 30px 0 0 0;
     font-weight: lighter;
