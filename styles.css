@@ -295,6 +295,8 @@ hr{
 }
 .popup-info-text{
     margin-left: 10px;
+    max-height: 30px;
+    overflow: hidden;
 }
 .popup-title{
     max-height: 40px;
@@ -314,7 +316,6 @@ hr{
     max-height: 140px;
     overflow: hidden;
     text-overflow: ellipsis;
-    
 }
 .popup-city{
     position: absolute;
