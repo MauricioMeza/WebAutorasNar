@@ -1,5 +1,26 @@
 var data = [
   {
+    nombre: "La Oreja que Habla.",
+    experiencia: 12,
+    nacimientoLugar: "Pasto",
+    nacimientoFecha: 1974,
+    residencia: "Cali",
+    areas: "Performance, teatro calle, teatro sala.",
+    obras: [
+      {nombre: "El símbolo oculto"},
+      {nombre: "Voces bajo el mar violeta - Performance"}
+    ],
+    creacionColectiva: [
+      {nombre: "Los cuentos del espíritu - Adaptación"}
+    ],
+    reconocimientos: [
+      {nombre: 'Portafolio de Estímulos “Gran Capital de la Alcaldía de Pasto", categoría obra de ficción no publicada con Voces bajo el mar violeta', año: 2023}
+    ],
+    perfil: 'Licenciada en Arte Dramático, Magíster en Escrituras Creativas y certificada en Dramaturgia y Performance del Texto por la Universidad de Lausana, Suiza, esta dramaturga ha dedicado su vida a la creación escénica desde diversas perspectivas. Desde 2016, es docente en el programa de Licenciatura en Arte Dramático de la Universidad del Valle, donde comparte su conocimiento y pasión por el arte teatral con nuevas generaciones. Para ella, la dramaturgia va más allá de la escritura; abarca todo lo relacionado con lo escénico, como la luz, el espacio, el color, hasta la interacción entre el cuerpo y el espacio. Su escritura reconoce que cada contexto es único, y por ello su dramaturgia se traslada con ella, adaptándose a los territorios que habita y a las formas en las que su cuerpo se relaciona con el mundo. En su labor docente, ha fomentado la escritura en jóvenes. Su trabajo busca incentivar la creatividad y alentar a los demás a escribir, reconociendo el poder de la palabra como vehículo de transformación y expresión en cualquier contexto.',
+    foto: "./assets/Fotografía Portada - La oreja que habla.jpg"
+  },
+
+  {
     nombre: "Angela María Alarcón Montenegro ",
     experiencia: 6,
     nacimientoLugar: "Pasto",
@@ -81,27 +102,6 @@ var data = [
     ],
     perfil: 'Esta dramaturga creció en el barrio El Rosario, en la zona suroriental de la ciudad de Pasto, un área frecuentemente olvidada junto al corregimiento de Jamondino, esta artista ha encontrado en las periferias una fuente profunda de inspiración. Su obra “Voces bajo el mar violeta” surgió de su primera entrevista a vecinas y amigas del barrio, descubriendo en ellas lugares y territorios vivos. Además de su trayectoria como actriz de teatro y escritora de minificción, es una artista de performance cuya práctica explora las fronteras entre el cuerpo, la acción y el espacio, creando experiencias que invitan al espectador a vivir el arte de manera visceral y participativa. Su faceta como docente de lengua castellana y literatura y su labor como co fundadora de Casa Tomada, un espacio cultural en su comunidad, refuerzan su compromiso con el desarrollo y la visibilidad de las expresiones artísticas en su territorio. Su trabajo busca dar voz a lo invisible y a las historias “marginadas”, creando un puente entre el arte y su comunidad. A través de sus diversas disciplinas artísticas, se dedica a conectar lo vivido con lo expresado, transformando lo cotidiano en un acto de resistencia y revelación.',
     foto: "./assets/Fotografía Portada - Fernanda Enríquez.jpg"
-  },
-  
-  {
-    nombre: "La Oreja que Habla.",
-    experiencia: 12,
-    nacimientoLugar: "Pasto",
-    nacimientoFecha: 1996,
-    residencia: "Cali",
-    areas: "Performance, teatro calle, teatro sala.",
-    obras: [
-      {nombre: "El símbolo oculto"},
-      {nombre: "Voces bajo el mar violeta - Performance"}
-    ],
-    creacionColectiva: [
-      {nombre: "Los cuentos del espíritu - Adaptación"}
-    ],
-    reconocimientos: [
-      {nombre: 'Portafolio de Estímulos “Gran Capital de la Alcaldía de Pasto", categoría obra de ficción no publicada con Voces bajo el mar violeta', año: 2023}
-    ],
-    perfil: 'Esta dramaturga creció en el barrio El Rosario, en la zona suroriental de la ciudad de Pasto, un área frecuentemente olvidada junto al corregimiento de Jamondino, esta artista ha encontrado en las periferias una fuente profunda de inspiración. Su obra “Voces bajo el mar violeta” surgió de su primera entrevista a vecinas y amigas del barrio, descubriendo en ellas lugares y territorios vivos. Además de su trayectoria como actriz de teatro y escritora de minificción, es una artista de performance cuya práctica explora las fronteras entre el cuerpo, la acción y el espacio, creando experiencias que invitan al espectador a vivir el arte de manera visceral y participativa. Su faceta como docente de lengua castellana y literatura y su labor como co fundadora de Casa Tomada, un espacio cultural en su comunidad, refuerzan su compromiso con el desarrollo y la visibilidad de las expresiones artísticas en su territorio. Su trabajo busca dar voz a lo invisible y a las historias “marginadas”, creando un puente entre el arte y su comunidad. A través de sus diversas disciplinas artísticas, se dedica a conectar lo vivido con lo expresado, transformando lo cotidiano en un acto de resistencia y revelación.',
-    foto: "./assets/Fotografía Portada - La oreja que habla.jpg"
   },
 
   {nombre: "Brigitte Georgina Andrade Erazo",
