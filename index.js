@@ -1,3 +1,6 @@
+/*-----------------------------------
+-----------DATA DRAMATURGAS----------
+-------------------------------------*/
 var data = [
   {
     nombre: "La Oreja que Habla.",
@@ -147,14 +150,22 @@ var data = [
 ,
 ]
 
+/*-----------------------------------
+----------- SELECTORS HTML ----------
+-------------------------------------*/
 const scrollContainer = document.getElementById("content-time");
-
 const exprcRes = document.getElementById("experienciaA");
 const areasRes = document.getElementById("areasA");
 const nombrRes = document.getElementById("nombreA");
 const prfilRes = document.getElementById("perfilA");
 const nacmtRes = document.getElementById("nacimientoA");
 const imgenRes = document.getElementById("popup-img");
+
+
+
+/*----------------------------------
+------------ POP-UP MAIN -----------
+------------------------------------*/
 
 function openPopup(index) {
     document.querySelector('.overlay').style.display = 'flex';
@@ -186,8 +197,19 @@ function closePopup() {
     document.querySelector('.overlay').style.display = 'none';
 }
 
+function truncateString(str, max){
+  if (str.length > max) {
+    const start = str.slice(0, max);
+    str = start + "...";
+  }
+  return str;
+}
 
 
+
+/*----------------------------------
+------------ AUTOSCROLL ------------
+------------------------------------*/
 let scrollAmount = 0;
 let scrollDirection = 1;
 const scrollSpeed = 0.4; // Adjust this value to control the scroll speed
@@ -206,10 +228,8 @@ scrollContainer.addEventListener('mousedown', () => autoScrolling = false);
 scrollContainer.addEventListener('touchstart', () => autoScrolling = false);
 autoScroll();
 
-function truncateString(str, max){
-  if (str.length > max) {
-    const start = str.slice(0, max);
-    str = start + "...";
-  }
-  return str;
-}
+
+
+/*----------------------------------
+------------- CAROUSEL -------------
+------------------------------------*/

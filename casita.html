@@ -6,6 +6,7 @@
     <meta name="description" content="Este es un espacio interactivo donde convergen las voces, palabras y pensamientos de mujeres dramaturgas Nariñenses">
     <meta name="robots" content="index,follow">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <title>+Mujeres+Arte+Cultura</title>
 </head>
 <body>
@@ -16,17 +17,17 @@
         <ul class="nav-list">
             <li>
                 <a href="./index.html">
-                    <img class="nav-btn" src="./assets/BOTON-INICIO.png" alt="Inicio">
+                    <img class="nav-btn" src="./assets/BOTON-INICIO-MORADO.png" alt="Inicio">
                 </a>
             </li>
             <li>
                 <a href="./index.html#territorio">
-                    <img class="nav-btn" src="./assets/BOTON-TERRITORIO.png" alt="Territorio">
+                    <img class="nav-btn" src="./assets/BOTON-TERRITORIO-MORADO.png" alt="Territorio">
                 </a>
             </li>
             <li>
                 <a href="./index.html#tiempo">
-                    <img class="nav-btn" src="./assets/BOTON-TIEMPO.png" alt="Tiempo">
+                    <img class="nav-btn" src="./assets/BOTON-TIEMPO-MORADO.png" alt="Tiempo">
                 </a>
             </li>
         </ul>
@@ -36,12 +37,12 @@
     <!------------PORTADA-BANNER------------>
     <!-------------------------------------->
     <section id="casita">
-        <div class="casita-side side-foto"></div>
         <div class="casita-side side-data">
             <div class="data-info">
                 <img class="data-info-icon" src="./assets/ÍCONO-OBRAS.png">
                 <h1 class="data-info-name">Silvia Rodríguez Narváez</h1>
             </div>
+
             <div class="data-info-container">
                 <p class="data-info-text">
                     Licenciada en Filosofía y Letras y artista investigadora de la ciudad de Pasto. Hace 17 años se desenvuelve como actriz dentro de compañías de mediana y larga trayectoria donde, además, ha recibido formación en teatro sala, clown dramático, calle, circo y dirección. Su trayectoria dramatúrgica se ha fortalecido de la mano de maestros como Sergio Blanco, Paco Zarzoso, Verónica Musalem, Juan Pablo Troncoso y Ana Melo. 
@@ -53,16 +54,148 @@
                     Esta dramaturga se interesa por los clásicos del teatro, especialmente por su ruptura en el contexto social actual y su vigencia en una realidad latinoamericana. Además, destaca su interés en la teoría teatral como puente para la comprensión del problema escénico en la creación.
                 </p>
             </div>
-            
+
+            <div class="data-info-galeria">
+                <div id="carouselImgs" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/Silvia/FotografíaPortada-Silvia_.jpg" class="d-block w-100" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/Silvia/Fotografía-Clown-Silvia.jpg" class="d-block w-100" alt="Slide 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/Silvia/Fotografía-Clown2-Silvia.jpg" class="d-block w-100" alt="Slide 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/Silvia/Fotografía-ELAuca-Emiro-Silvia.jpg" class="d-block w-100" alt="Slide 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/Silvia/Fotografía-Lesa-Silvia.jpg" class="d-block w-100" alt="Slide 5">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/Silvia/Fotografía-PIE-Silvia.jpg" class="d-block w-100" alt="Slide 6">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/Silvia/Fotografía-Ataraxia-Silvia.jpg" class="d-block w-100" alt="Slide 7">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/Silvia/Fotografía-Retratos-Silvia.jpg" class="d-block w-100" alt="Slide 8">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/Silvia/Fotografía-Silencio-Silvia.jpg" class="d-block w-100" alt="Slide 9">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselImgs" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselImgs" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="data-info-obras">
+                <span>
+                    <img class="obras-icon" src="./assets/BOTÓN-OBRAS.png">
+                </span>
+                <span>
+                    <h2 class="obras-title">Obras</h2>
+                    <ul class="obras-list">
+                        <li>
+                        <b>Extrasolar</b> -  2015
+                        </li>
+                        <li>
+                            <b>Valium 10 - 25 climax</b> -  2012
+                        </li>
+                        <li>
+                            <b>Una mujer de 4.0 en conducta</b> -  2017
+                        </li>
+                        <li>
+                            <b>Lesa humanidad de un mango</b> -  2021
+                        </li>
+                        <li>
+                            <b>Ataraxia</b> -  2021
+                        </li>
+                        <li>
+                            <b>Metasujeto o la paradoja de existir</b> -  2021
+                        </li>
+                        <li>
+                            <b>Contradiálogo</b> -  2022
+                        </li>
+                        <li>
+                            <b>Vacío</b> -  2023
+                        </li>
+                        <li>
+                            <b>La Resistencia</b> -  2024
+                        </li>
+                        <li>
+                            <b>Polinices</b> -  2024
+                        </li>
+                        <li>
+                            <b>Exilio</b> -  2024
+                        </li>
+                    </ul>   
+                </span>
+            </div>
+
+            <div class="data-info-obras">
+                <span>
+                    <img class="obras-icon" src="./assets/BOTÓN-CREAC-COLECT.png">
+                </span>
+                <span>
+                    <h2 class="obras-title">Creacion Colectiva</h2>
+                    <ul class="obras-list">
+                        <li>
+                        <b>Nada pasa</b> -  2021
+                        </li>
+                        <li>
+                            <b>Memo, el elefante itinerante</b> -  2022
+                        </li>
+                        <li>
+                            <b>Qué ruido hace el silencio</b> -  2023
+                        </li>
+                    </ul>
+                </span>
+            </div>
+
+            <div class="data-info-obras">
+                <span>
+                    <img class="obras-icon" src="./assets/BOTÓN-RECONOCIMIENTOS.png">
+                </span>
+                <span>
+                    <h2 class="obras-title">Reconocimientos</h2>
+                    <ul class="obras-list">
+                        <li>
+                        <b>Portafolio de estímulos “La gran capital” de la Alcaldía de Pasto, categoría teatro, premio texto teatral obra inédita con Metasujeto o la paradoja de existir</b> -  2021
+                        </li>
+                        <li>
+                            <b>Tesis de grado meritoria, Licenciatura en Filosofía y Letras de la Facultad de Ciencias Sociales y Humanidades de la  Universidad de Nariño con ATARAXIA</b> -  2022
+                        </li>
+                        <li>
+                            <b>Dramaturgias de Mujeres del Sur con ATARAXIA -  ISBN: 978-958-53721-0-8</b> -  2024
+                        </li>
+                        <li>
+                            <b>Panorama teatral colombiano: Dramaturgias emergentes -  ISBN: 978-628-01-5716-0</b>
+                        </li>
+                    </ul>
+                </span>
+            </div>
         </div>
         <div class="casita-side side-info">
+
             <div class="popup-audio">
-                <img class="popup-audio-icon" src="./assets/BOTÓN CONOCE SU VOZ2.png">
-                <span id="experienciaA">Nombre Audio</span>
+                <img id="icon-audio1" class="popup-audio-icon" src="./assets/BOTÓN-AUDIO.png" onclick="playAudio()">
+                <b><span>Ataraxia</span></b>
+                <span>Fragmento de Obra</span>
+                <span>(Voz - Silvia Rodríguez)</span>
+                <audio id="audio1" src="./assets/Silvia/Audio-ataraxia-2024.mp3"></audio>
             </div>
-            <div class="popup-audio">
-                <img class="popup-audio-icon" src="./assets/BOTÓN CONOCE SU VOZ2.png">
-                <span id="experienciaA">Nombre Audio</span>
+            <div class="popup-info">
+                <img class="popup-info-icon" src="./assets/ÍCONO-TIERRA.png">
+                <span id="experienciaA" class="popup-info-text-full">Nacimiento - <b>Pasto </b>1994<br>Residencia - <b>Pasto - Medellin</b> </span>
             </div>
             <div class="popup-info">
                 <img class="popup-info-icon" src="./assets/ÍCONO-RECORRIDO.png">
@@ -74,6 +207,8 @@
             </div>
         </div>
     </section>
- 
+
+    <script src="casita.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

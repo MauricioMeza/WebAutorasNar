@@ -40,6 +40,7 @@ nav{
     height: 70px;
     background-color: #271f44;
     position: relative;
+    z-index: 10;
 }
 #nav2{
     background-color: #773a54;
@@ -275,7 +276,7 @@ hr{
     width: 96%;
     height: 94%;
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 700px) {
     .popup{
         grid-template-columns: 1fr;
     }
@@ -306,8 +307,20 @@ hr{
     margin: 1.5vw 0 1.5vw 0;
 }
 .popup-audio-icon{
-    height: 75px;
-    width: 75px;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+@keyframes fillImage {
+    from {
+        background-size: 0% 100%;
+    }
+    to {
+        background-size: 100% 100%;
+    }
+}
+.playing {
+    animation: fillImage var(--audio-duration) linear forwards;
 }
 .popup-info-text{
     margin-left: 10px;
@@ -372,22 +385,17 @@ hr{
 /*--------------------*/
 #casita{
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 5fr 2fr;
     grid-template-rows: 1fr;
     height: calc(100vh - 70px);
     margin: 0;
     padding: 0;
     background-color: #f2e4e3;
-}
-@media screen and (max-width: 800px) {
-    #casita{
-        grid-template-columns: 0fr 2fr 1fr;
-    }
+    font-family: 'Quicksand', serif;
 }
 
 .casita-side{
     height: 100%;
-    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -400,29 +408,58 @@ hr{
 }
 
 .side-info{
-    background-color: #271f44; 
-    padding: 0 10% 0 10%;
+    background-image: url("./assets/BANNER-CASITA-INFO.jpg"); 
+    background-size: cover;
     display: grid;
     align-items: center; 
     overflow: hidden;
+    color: #cdcdcd;
+    padding: 0 10% 0 10%;
 }
 
 .side-data{
     color: #271f44;
     overflow-y: scroll;
-    text-justify:inter-word;
 }
 
 .data-info{
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 20px 0 0 0;
+    position: sticky;
+    z-index: 9;
+    top: 0px;
+    background-color: #f2e4e3;
+    padding-top: 8vh;
+    padding: 8vh 10% 2vh 10%;
 }
 .data-info-container{
     text-align: justify;
     text-indent: 30px;
+    padding: 0 10% 6vh 10%;
 }
+.data-info-galeria{
+    padding: 6vh 10% 6vh 10%;
+    background-color: #9f516f;
+}
+.data-info-obras{
+    background-color: #cec4dd;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 6vh 10% 6vh 10%;
+    align-items: center;
+}
+.obras-icon{
+    width: 20vw;
+    height: auto;
+}
+.obras-title{
+    width: 20vw;
+    height: auto;
+    color: #773a54;
+    text-indent: 15px;
+
+}
+
 .data-info-icon{
     height: 50x;
     width: 50px;
@@ -433,13 +470,19 @@ hr{
 }
 .data-info-text{
     margin: 0;
-    padding: 20px 20px 0 20px;
+    padding: 20px 0 0 0;
     font-size: 18px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
+    .obras-icon{
+        display: none;
+    }
     .side-foto{
         display: none;
+    }
+    .data-info-obras{
+        grid-template-columns: 0fr 1fr;
     }
     #casita{
         height: calc(100vh - 70px + 100vh);
@@ -460,4 +503,36 @@ hr{
 footer{
     padding: 15px;
     background-color: #896ab0;
+}
+
+
+/*----------------------*/
+/*------ Scroll -------*/
+/*--------------------*/
+/* width */
+::-webkit-scrollbar {
+    width: 14px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #d7c6d4; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a1536d; /* Thumb color */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color on hover */
+}
+
+/*------------------------*/
+/*------ CAROUSEL -------*/
+/*----------------------*/
+
+.carousel-item img {
+    width: 100%; /* Make sure images fill the width */
+    height: 400px; /* Set a fixed height for all images */
+    object-fit: contain; /* Maintain aspect ratio while filling the container */
 }
