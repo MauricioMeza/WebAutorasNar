@@ -60,8 +60,8 @@ var data = [
     areas: "Teatro calle, circo, teatro sala, títeres y objetos, teatro comunitario, teatro infantil, clown dramático, teatro experimental, performance, investigación en filosofía teatral.",
     obras: [
       {nombre: "Extrasolar", año: 2015},
-      {nombre: "Valium 10 - 25 climax", año: 2012},
       {nombre: "Una mujer de 4.0 en conducta", año: 2017},
+      {nombre: "Valium 10 - 25 climax", año: 2012},
       {nombre: "Lesa humanidad de un mango", año: 2021},
       {nombre: "Ataraxia", año: 2021},
       {nombre: "Metasujeto o la paradoja de existir", año: 2021},
