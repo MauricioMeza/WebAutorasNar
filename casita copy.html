@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este es un espacio interactivo donde convergen las voces, palabras y pensamientos de mujeres dramaturgas Nariñenses">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>+Mujeres+Arte+Cultura</title>
+</head>
+<body>
+    <!-------------------------------------->
+    <!------------NAVIGATION BAR------------>
+    <!-------------------------------------->
+    <nav id="nav2">
+        <ul class="nav-list">
+            <li>
+                <a href="./index.html">
+                    <img class="nav-btn" src="./assets/BOTON-INICIO-MORADO.png" alt="Inicio">
+                </a>
+            </li>
+            <li>
+                <a href="./index.html#territorio">
+                    <img class="nav-btn" src="./assets/BOTON-TERRITORIO-MORADO.png" alt="Territorio">
+                </a>
+            </li>
+            <li>
+                <a href="./index.html#tiempo">
+                    <img class="nav-btn" src="./assets/BOTON-TIEMPO-MORADO.png" alt="Tiempo">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-------------------------------------->
+    <!------------PORTADA-BANNER------------>
+    <!-------------------------------------->
+    <section id="casita">
+        <div class="casita-side side-data">
+            <div class="data-info">
+                <img class="data-info-icon" src="./assets/ÍCONO-OBRAS.png">
+                <h1 class="data-info-name">Nombre de la Autora</h1>
+            </div>
+
+            <div class="data-info-container">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+            </div>
+
+            <div class="data-info-galeria">
+                <div id="carouselImgs" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselImgs" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselImgs" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="data-info-obras">
+                <span>
+                    <img class="obras-icon" src="./assets/BOTÓN-OBRAS.png">
+                </span>
+                <span>
+                    <h2 class="obras-title">Obras</h2>
+                    <ul class="obras-list">
+                        <li>
+                        <b>xxxxxx</b> -  2000
+                        </li>
+                    </ul>   
+                </span>
+            </div>
+
+            <div class="data-info-obras">
+                <span>
+                    <img class="obras-icon" src="./assets/BOTÓN-CREAC-COLECT.png">
+                </span>
+                <span>
+                    <h2 class="obras-title">Creacion Colectiva</h2>
+                    <ul class="obras-list">
+                        <li>
+                        <b>xxxxxxxxx</b> -  2000
+                        </li>
+                    </ul>
+                </span>
+            </div>
+
+            <div class="data-info-obras">
+                <span>
+                    <img class="obras-icon" src="./assets/BOTÓN-RECONOCIMIENTOS.png">
+                </span>
+                <span>
+                    <h2 class="obras-title">Reconocimientos</h2>
+                    <ul class="obras-list">
+                        <li>
+                        <b>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</b> -  2000
+                        </li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+        <div class="casita-side side-info">
+
+            <div class="popup-audio">
+                <img id="icon-audio1" class="popup-audio-icon" src="./assets/BOTÓN-AUDIO.png" onclick="playAudio()">
+                <span> <b>Ataraxia </b> - <i id="audio-time">0:00</i></span>
+                <span>Fragmento de Obra (Voz - Silvia Rodríguez)</span>
+                <span></span>
+                <audio id="audio1" src="./assets/Silvia/Audio-ataraxia-2024.mp3"></audio>
+            </div>
+            <div class="popup-info">
+                <img class="popup-info-icon" src="./assets/ÍCONO-TIERRA.png">
+                <span id="referenciaB" class="popup-info-text-full">xxxxxxxxxxxxxxxxxxxxx</b> </span>
+            </div>
+            <div class="popup-info">
+                <img class="popup-info-icon" src="./assets/ÍCONO-RECORRIDO.png">
+                <span id="experienciaB" class="popup-info-text-full">xxxxxxxxxxxxxxxxxxxxxxx</b></span>
+            </div>
+            <div class="popup-info">
+                <img class="popup-info-icon" src="./assets/ÍCONO-ÁREAS.png">
+                <span id="areasB" class="popup-info-text-full">Areas - <b>xxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxx.</b></span>
+            </div>
+        </div>
+    </section>
+
+    <script src="data.js"></script> 
+    <script src="casita.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
