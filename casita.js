@@ -10,19 +10,22 @@ const premsAutora = document.getElementsByClassName('obras-list')[2];
 const refrnAutora = document.getElementById('referenciaB');
 const exprnAutora = document.getElementById('experienciaB');
 const areasAutora = document.getElementById('areasB');
-const audioTime = document.getElementById('audio-time');
-const audioPlayer = document.getElementById('audio1');
+const audiosAutora = document.getElementById('audios');
+
 
 /*------------------------------------
 ----------- INFO REFERENCES ----------
 --------------------------------------*/
 autoraIndex = 2;
+
+//----- Info Data General -------
 nomeAutora.innerHTML = data[autoraIndex].nombre;
 refrnAutora.innerHTML = 'Nacimiento - <b>' + data[autoraIndex].nacimientoLugar + '</b> ' + data[autoraIndex].nacimientoFecha + '<br>' +
                         'Residencia - <b>' +  data[autoraIndex].residencia + '</b>';
 exprnAutora.innerHTML = 'Caminar Dramaturgico - <b>' + data[autoraIndex].experiencia + ' Años</b>';
 areasAutora.innerHTML = '<b>' + data[autoraIndex].areas + '</b>';
 
+//----- Info Data Descripcion -------
 descAutora.innerHTML = '';
 parrafosPerfil = data[autoraIndex].perfil.split('\n');
 parrafosPerfil.forEach(element => {
@@ -30,6 +33,7 @@ parrafosPerfil.forEach(element => {
   descAutora .innerHTML += paragraph;
 });
 
+//----- Info Data Obras-Premios -------
 addObras(obrasAutora, data[autoraIndex].obras)
 addObras(colctAutora, data[autoraIndex].creacionColectiva)
 addObras(premsAutora, data[autoraIndex].reconocimientos)
@@ -45,6 +49,7 @@ function addObras(container, data){
   });
 }
 
+//----- Info Data Galeri-Imgs -------
 imgsAutora.innerHTML = '';
 data[autoraIndex].galeria.forEach((imageSrc, index) => {
   carouselItemHTML = 
@@ -54,29 +59,48 @@ data[autoraIndex].galeria.forEach((imageSrc, index) => {
   imgsAutora.innerHTML += carouselItemHTML;
 });
 
-
+//----- Info Data Galeri-Imgs -------
+audiosAutora.innerHTML = '';
+var audioPlayers = []
+var audioTimes = []
+data[autoraIndex].audio.forEach((audio, index) => {
+  audioItemHTML = 
+  `<div class="popup-audio">
+      <img id="icon-audio1" class="popup-audio-icon" src="./assets/BOTÓN-AUDIO.png" onclick="playAudio(${index})">
+      <span> <b>${audio.nombre} </b> - <i id=${"audio-time"+index}>0:00</i></span>
+      <span>${audio.desc}</span>
+      <span></span>
+      <audio id=${"audio"+index} src=${audio.file}></audio>
+  </div>`
+  audiosAutora.innerHTML += audioItemHTML;
+  var audio = document.getElementById("audio"+index)
+  var audioTime = document.getElementById('audio-time'+index);
+  audioPlayers.push(audio)
+  audioTimes.push(audioTime);
+});
 
 
 
 /*-----------------------------------
 ------------ AUDIO PLAYERS ----------
 -------------------------------------*/
-var playing = false;
-function playAudio(){
-    if(!playing){
-      audioPlayer.play();
-      playing = true;
-      updateTime();
+var playing = []
+audioPlayers.forEach(() => {
+ playing.push(false)
+})
+function playAudio(index){
+    if(!playing[index]){
+      audioPlayers[index].play();
+      playing[index] = true;
+      updateTime(index);
     }else{
-      audioPlayer.load();
-      playing = false;
-      updateTime();
+      audioPlayers[index].load();
+      playing[index] = false;
+      updateTime(index);
     }
 }
 
 function secondsFormat(seconds){
-  console.log(seconds)
-  console.log(seconds === NaN)
   if(isNaN(seconds)){
     return "00:00"
   }
@@ -87,13 +111,16 @@ function secondsFormat(seconds){
   return mins + ":" + secs;
 }
 
-audioPlayer.addEventListener('loadedmetadata', updateTime);
-audioPlayer.addEventListener('timeupdate', updateTime);
-function updateTime(){
-  if(playing){
-    audioTime.innerHTML = secondsFormat(audioPlayer.currentTime) + "/" +  secondsFormat(audioPlayer.duration);
+audioPlayers.forEach((player, index) => {
+  player.addEventListener('loadedmetadata', (e) => {updateTime(index)});
+  player.addEventListener('timeupdate', (e) => {updateTime(index)});
+})
+
+function updateTime(index){
+  console.log(audioPlayers[index].currentTime);
+  if(playing[index]){
+    audioTimes[index].innerHTML = secondsFormat(audioPlayers[index].currentTime) + "/" +  secondsFormat(audioPlayers[index].duration);
   }else{
-    audioTime.innerHTML = secondsFormat(audioPlayer.duration);;
+    audioTimes[index].innerHTML = secondsFormat(audioPlayers[index].duration);
   }
 }
-updateTime()
