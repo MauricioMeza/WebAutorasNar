@@ -53,7 +53,7 @@ var data = [
     
     {
       nombre: "Silvia Rodríguez Narváez",
-      experiencia: 17,
+      experiencia: 12,
       nacimientoLugar: "Pasto", 
       nacimientoFecha: 1994,
       residencia: "Pasto - Medellin",

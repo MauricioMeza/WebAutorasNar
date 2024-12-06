@@ -117,7 +117,6 @@ audioPlayers.forEach((player, index) => {
 })
 
 function updateTime(index){
-  console.log(audioPlayers[index].currentTime);
   if(playing[index]){
     audioTimes[index].innerHTML = secondsFormat(audioPlayers[index].currentTime) + "/" +  secondsFormat(audioPlayers[index].duration);
   }else{
