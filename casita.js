@@ -16,7 +16,7 @@ const audiosAutora = document.getElementById('audios');
 /*------------------------------------
 ----------- INFO REFERENCES ----------
 --------------------------------------*/
-autoraIndex = 2;
+autoraIndex = 0;
 
 //----- Info Data General -------
 nomeAutora.innerHTML = data[autoraIndex].nombre;
@@ -30,7 +30,7 @@ descAutora.innerHTML = '';
 parrafosPerfil = data[autoraIndex].perfil.split('\n');
 parrafosPerfil.forEach(element => {
   const paragraph = `<p class="data-info-text">${element}</p>`
-  descAutora .innerHTML += paragraph;
+  descAutora.innerHTML += paragraph;
 });
 
 //----- Info Data Obras-Premios -------
@@ -39,14 +39,19 @@ addObras(colctAutora, data[autoraIndex].creacionColectiva)
 addObras(premsAutora, data[autoraIndex].reconocimientos)
 function addObras(container, data){
   container.innerHTML = '';
-  data.forEach(element => {
-    const obra = document.createElement("li");
-    obra.innerHTML = '<b>' + element.nombre;
-    if(element.año != undefined){
-      obra.innerHTML += ' - </b>' + element.año; 
-    }
-    container.appendChild(obra);
-  });
+  if(data != undefined){
+    data.forEach(element => {
+      const obra = document.createElement("li");
+      obra.innerHTML = '<b>' + element.nombre;
+      if(element.año != undefined){
+        obra.innerHTML += ' - </b>' + element.año; 
+      }
+      container.appendChild(obra);
+    });
+  }else{
+    container.parentElement.parentElement.style.display = "none";
+  }
+  
 }
 
 //----- Info Data Galeri-Imgs -------
@@ -59,10 +64,9 @@ data[autoraIndex].galeria.forEach((imageSrc, index) => {
   imgsAutora.innerHTML += carouselItemHTML;
 });
 
-//----- Info Data Galeri-Imgs -------
+//----- Info Data Audio -------
 audiosAutora.innerHTML = '';
 var audioPlayers = []
-var audioTimes = []
 data[autoraIndex].audio.forEach((audio, index) => {
   audioItemHTML = 
   `<div class="popup-audio">
@@ -74,9 +78,7 @@ data[autoraIndex].audio.forEach((audio, index) => {
   </div>`
   audiosAutora.innerHTML += audioItemHTML;
   var audio = document.getElementById("audio"+index)
-  var audioTime = document.getElementById('audio-time'+index);
   audioPlayers.push(audio)
-  audioTimes.push(audioTime);
 });
 
 
@@ -118,8 +120,8 @@ audioPlayers.forEach((player, index) => {
 
 function updateTime(index){
   if(playing[index]){
-    audioTimes[index].innerHTML = secondsFormat(audioPlayers[index].currentTime) + "/" +  secondsFormat(audioPlayers[index].duration);
+    document.getElementById(`audio-time${index}`).innerHTML = secondsFormat(audioPlayers[index].currentTime) + "/" +  secondsFormat(audioPlayers[index].duration);
   }else{
-    audioTimes[index].innerHTML = secondsFormat(audioPlayers[index].duration);
+    document.getElementById(`audio-time${index}`).innerHTML = secondsFormat(audioPlayers[index].duration);
   }
 }
