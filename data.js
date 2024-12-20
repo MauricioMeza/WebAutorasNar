@@ -3,6 +3,7 @@
 -------------------------------------*/
 var data = [
     {
+      url: "oreja",
       nombre: "La Oreja que Habla",
       experiencia: 12,
       nacimientoLugar: "Pasto",
@@ -29,8 +30,8 @@ var data = [
         {nombre: "Momo. Adaptación escénica de la novela de Michael Ende", año: 2016},
       ],
       reconocimientos: [
-        {nombre: 'Programa Nacional de Estímulos del Ministerio de Cultura de Colombia, categoría de creación teatral en el año, con <a href="https://elsilenciodelpoetateatro.blogspot.com/">El Silencio del Poeta”</a>', año: 2012},
-        {nombre: 'Programa Nacional de Estímulos del  Ministerio de Cultura de Colombia, categoría circulación nacional en el año, con <a href="https://elsilenciodelpoetateatro.blogspot.com/">El Silencio del Poeta”</a>', año: 2014},
+        {nombre: 'Programa Nacional de Estímulos del Ministerio de Cultura de Colombia, categoría de creación teatral en el año, con <a href="https://elsilenciodelpoetateatro.blogspot.com/">"El Silencio del Poeta”</a>', año: 2012},
+        {nombre: 'Programa Nacional de Estímulos del  Ministerio de Cultura de Colombia, categoría circulación nacional en el año, con <a href="https://elsilenciodelpoetateatro.blogspot.com/">"El Silencio del Poeta”</a>', año: 2014},
         {nombre: 'Convocatoria de Estímulos y Apoyos Concertados “Cultura Convoca” de la Gobernación de Nariño, categoría creación literaria - memoria y tradición oral, con  “Las Cenizas de la Virgen”', año: 2017},
         {nombre: 'Convocatoria <a href="https://vocesglobalesteatrocom.wordpress.com/convocatorias/voces-globales/"> Voces Globales Colombia 2020 </a> investigación de dramaturgia realizada por Marina Lamus Obregón y Manuela Vera, de un mapa Dramatúrgico Nacional. Finalista con la obra “Las Cenizas de la Virgen”', año: 2020},
         {nombre: 'Convocatoria Voces desde la cuarentena en el año, obra seleccionada con <a href="https://www.edicioneselsilencio.com.co/estamos-para-ser-viles/">“Estamos para ser viles”. Ediciones el Silencio </a>', año: 2020},
@@ -45,6 +46,7 @@ var data = [
     },
   
     {
+      url: "angela",
       nombre: "Angela María Alarcón Montenegro ",
       experiencia: 8,
       nacimientoLugar: "Pasto",
@@ -74,6 +76,7 @@ var data = [
     },
     
     {
+      url: "silvia",
       nombre: "Silvia Rodríguez Narváez",
       experiencia: 12,
       nacimientoLugar: "Pasto", 
@@ -111,6 +114,7 @@ var data = [
     },
     
     {
+      url: "fernanda",
       nombre: "Fernanda Villarreal",
       experiencia: 10,
       nacimientoLugar: "Pasto",
@@ -145,6 +149,7 @@ var data = [
     },
   
     {
+      url: "brigitte",
       nombre: "Brigitte Georgina Andrade Erazo",
       experiencia: 3,
       nacimientoLugar: "Pasto",
@@ -164,6 +169,7 @@ var data = [
     },
   
     {
+      url: "carolina",
       nombre: "Angie Carolina Rodríguez Basante",
       experiencia: 4,
       nacimientoLugar: "Pasto",

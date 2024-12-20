@@ -8,6 +8,7 @@ const nombrRes = document.getElementById("nombreA");
 const prfilRes = document.getElementById("perfilA");
 const nacmtRes = document.getElementById("nacimientoA");
 const imgenRes = document.getElementById("popup-img");
+const botonRes = document.getElementById("casita-btn");
 
 
 
@@ -29,6 +30,12 @@ function openPopup(index) {
       }else{
         imgenRes.style.backgroundImage = '';  
       }
+      botonRes.addEventListener('click', function (e) {
+        e.preventDefault();
+        const extraName = data[index].url;
+        const targetURL = `./casita.html?nombre=${encodeURIComponent(extraName)}`;
+        window.location.href = targetURL;
+    });
       
     }catch{
       nombrRes.innerHTML = "Nombre de la Autora";
@@ -75,9 +82,3 @@ function autoScroll() {
 scrollContainer.addEventListener('mousedown', () => autoScrolling = false);
 scrollContainer.addEventListener('touchstart', () => autoScrolling = false);
 autoScroll();
-
-
-
-/*----------------------------------
-------------- CAROUSEL -------------
-------------------------------------*/
