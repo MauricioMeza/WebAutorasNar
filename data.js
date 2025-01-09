@@ -27,7 +27,7 @@ var data = [
         {nombre: "“Erótika”, adaptación escénica a partir de la poesía de Anna Rosetti, Juana de Ibarbourou, Gioconda Belli, Oliverio Girondo, Charles Bukowski.", año: 2004},
         {nombre: "El Malentendido de Albert Camus,  adaptación libre de la pieza, trabajo de grado de la Certificación en Dramaturgia y Performance del texto.", año: 2007},
         {nombre: '<a href="https://obranumero36.blogspot.com/">No. 36 Adaptación en un Acto </a>. A partir de los textos El solicitante de Harold Pinter y La comedia del empleo de Pierre Ives Millot.', año: 2009},
-        {nombre: "Momo. Adaptación escénica de la novela de Michael Ende", año: 2016},
+        {nombre: 'Momo. Adaptación escénica de la novela de Michael Ende', año: 2016},
       ],
       reconocimientos: [
         {nombre: 'Programa Nacional de Estímulos del Ministerio de Cultura de Colombia, categoría de creación teatral en el año, con <a href="https://elsilenciodelpoetateatro.blogspot.com/">"El Silencio del Poeta”</a>', año: 2012},
@@ -42,7 +42,6 @@ var data = [
       foto: "./assets/Oreja/Fotografia-Portada-Oreja.jpg",
       galeria: ['./assets/Oreja/Fotografia-Portada-Oreja.jpg', './assets/Oreja/Dibujo-Oreja.jpg'],
       audio: [{file: "./assets/Oreja/Audio-Estamos-para-ser-viles.mp3", nombre:"Estamos para ser viles", desc:"Fragmento Monologo (Voz - La Oreja Que Habla)"}, {file: "./assets/Oreja/Audio-Cenizas-de-la-Virgen.mp3", nombre:"Las Cenizas de la Virgen", desc:"Fragmento (Voz - La Oreja Que Habla)"}]
-    
     },
   
     {
@@ -185,7 +184,7 @@ var data = [
       creacionColectiva: [
         {nombre: "Nada pasa", año: 2021},
         {nombre: "Qué ruido hace el silencio", año: 2022},
-        {nombre: "Memo, el elefante itinerante", año: 2022},
+        {nombre: 'Memo, el elefante itinerante (creado con: <a href="./casita.html?nombre=silvia"> Silvia Rodriguez </a>)', año: 2022},
       ],
       reconocimientos: [
         {nombre: 'Convocatoria Pública Departamental de Estímulos “Mi Nariño Cultura Viva”, categoría creación, con “Qué ruido hace el silencio”', año: 2023},
@@ -196,7 +195,6 @@ var data = [
       foto: "./assets/Fotografía Portada - Carolina Rodriguez.jpg",
       galeria: ['./assets/Carolina/Fotografia-Portada.jpeg', './assets/Carolina/Fotografia-Piel.jpeg', './assets/Carolina/Fotografia-Que ruido hace el silencio.jpg', './assets/Carolina/Fotografia-Lucia-Carolina.jpg', './assets/Carolina/Fotografia-CuerpoVozAzul-Carolina.jpg'],
       audio: [{file: "./assets/Carolina/Audio-ColinaRoja.mp3", nombre:"Colina Roja", desc:"Fragmento de Obra (Voz - Carolina Rodríguez)"}]
-    }
-  ,
+    },  ,
   ]
   
