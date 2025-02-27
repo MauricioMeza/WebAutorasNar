@@ -183,8 +183,8 @@ var data = [
       ],
       creacionColectiva: [
         {nombre: "Nada pasa", año: 2021},
-        {nombre: "Qué ruido hace el silencio", año: 2022},
-        {nombre: 'Memo, el elefante itinerante (creado con: <a href="./casita.html?nombre=silvia"> Silvia Rodriguez </a>)', año: 2022},
+        {nombre: 'Memo, el elefante itinerante', año: 2022},
+        {nombre: 'Qué ruido hace el silencio, con <a href="./casita.html?nombre=leidy">Leidy Hidalgo</a>', año: 2023},
       ],
       reconocimientos: [
         {nombre: 'Convocatoria Pública Departamental de Estímulos “Mi Nariño Cultura Viva”, categoría creación, con “Qué ruido hace el silencio”', año: 2023},
@@ -195,6 +195,145 @@ var data = [
       foto: "./assets/Fotografía Portada - Carolina Rodriguez.jpg",
       galeria: ['./assets/Carolina/Fotografia-Portada.jpeg', './assets/Carolina/Fotografia-Piel.jpeg', './assets/Carolina/Fotografia-Que ruido hace el silencio.jpg', './assets/Carolina/Fotografia-Lucia-Carolina.jpg', './assets/Carolina/Fotografia-CuerpoVozAzul-Carolina.jpg'],
       audio: [{file: "./assets/Carolina/Audio-ColinaRoja.mp3", nombre:"Colina Roja", desc:"Fragmento de Obra (Voz - Carolina Rodríguez)"}]
-    },  ,
+    },
+
+    {
+      url: "jazmin",
+      nombre: "Jazmín Fajardo Ayala",
+      experiencia: 25,
+      nacimientoLugar: "Pasto",
+      nacimientoFecha: 1981,
+      residencia: "Madrid, España",
+      areas: "Teatro sala, clown, improvisación.",
+      obras: [
+        {nombre: "Calígula, adaptación", año: 1999},
+        {nombre: "Los motivos del lobo, adaptación de Ruben Dario", año: 1999},
+        {nombre: "Las historias de los abuelos se convierten en un sueño", año: 1999},
+        {nombre: "Sueño de una noche de verano, adaptación", año: 2000},
+        {nombre: "La dama de Alba, adaptación", año: 2000},
+        {nombre: "Mi vida en rosa", año: 2010},
+        {nombre: "Una ciudad adelante", año: 2011},
+        {nombre: "El cambio es ahora, adaptación", año: 2013},
+        {nombre: "Cartas de Amor de una desconocida, adaptación", año: 2014},
+        {nombre: "Canovaccio El espejo, el reflejo y la sombra", año: 2018},
+        {nombre: "Habitando (O de cómo no perecer en el intento)", año: 2020},
+        {nombre: "Ella", año: 2023},
+        {nombre: "Raíz", año: 2024}
+      ],
+      creacionColectiva: [
+        {nombre: "Las Aventuras de una Dama con Francisco Viveros", año: 2015},
+        {nombre: "Las historias de mi Pueblo con Francisco Viveros", año: 2016},
+        {nombre: 'Retornos con Andrés Cuervo y Francisco Viveros', año: 2017},
+        {nombre: 'Diálogos Fugitivos con Orestes Pérez Estaquero', año: 2023},
+      ],
+      reconocimientos: [
+        {nombre: 'Beca Colombia Creativa', año: 2008},
+        {nombre: 'Programa Ibermedia - Los Proyectos de Atitlan (Formación) Madero Negro Arquitectura Audiovisual, 4:4:4: Televisión. Guatemala con el taller para la evolución de Proyectos de bajo presupuesto con la propuesta Bajo el Sol de los Venados (Colombia - Proyecto Ficción)', año: 2021},
+        {nombre: 'Beca Colfuturo, Universidad Complutense de Madrid, Doctorado en Estudios Teatrales', año: 2022},
+        {nombre: 'Beca Erasmus Traineeship, Estancia por estudios, Università degli Studi di Torino – Dipartimento di Letteratura Ispanoamericana', año: 2023},
+        {nombre: 'Beca Junta de Comunidades de Castilla La Mancha JCMM y Organización de Artesanos de Castilla La Mancha -  Máster en Artesanía y Diseño Contemporáneo. Universidad de Castilla La Mancha / Bellas Artes - Cuenca', año: 2024}
+      ],
+      perfil: 'Dramaturga, actriz y pedagoga artística con más de 26 años de experiencia en el teatro. Su obra explora la relación entre el texto, el cuerpo y las artes visuales, fusionando disciplinas como el clown, la dramaturgia textil y la adaptación teatral. Destacada por su habilidad para reinterpretar clásicos, como Calígula, y por integrar la escritura clown como motor creativo, ha desarrollado un enfoque único que vincula el arte del tejido con la dramaturgia, influenciada por su legado familiar. \n Jazmín, ha trabajado en el ámbito pedagógico y artístico, siendo docente y directora en diversas instituciones colombianas, además de obtener reconocimientos internacionales, como la Beca Colfuturo para estudios Doctorales en Estudios Teatrales en la Universidad Complutense de Madrid. Su formación abarca disciplinas como la Licenciatura en Arte Dramático, un Máster en Artesanía y Diseño Contemporáneo, y diplomados en diversas áreas artísticas. \n A lo largo de su carrera, ha dirigido y participado en numerosos proyectos teatrales y colectivos, desarrollando propuestas innovadoras y pedagógicas que invitan a la reflexión sobre la migración, el cuerpo y la identidad. Su trabajo continúa enriqueciendo el panorama del teatro colombiano, creando experiencias poéticas que buscan conectar profundamente con el público.',
+      foto: "./assets/Jazmin/Jazmin-Portada.jpg",
+      galeria: ['./assets/Jazmin/Jazmin-Fajardo.jpeg', './assets/Jazmin/Jazmin-Fajardo2.jpeg', './assets/Jazmin/Jazmin-Fajardo3.jpeg', './assets/Jazmin/Jazmin-Fajardo4.jpeg', './assets/Jazmin/Jazmin-Fajardo5.jpeg', './assets/Jazmin/Jazmin-Fajardo6.jpeg', './assets/Jazmin/InstalacionUrdimbre.jpeg'],
+      audio: [{file: "./assets/Jazmin/hodonfinal.mp3", nombre:"Hodón, Microrrelato de Mario Sender, 2018", desc:"Fragmento de la puesta en escena de Diálogos Fugitivos (sonoro/voces de Adí Bar-Gera, María Dolores Vila, Bilauca Lemina, Margarida de Barros, Jara Martínez, Fanny Ramos, Emilia Perassi, Calafia Juárez, Sofía Rodriguez, Yeorang Na, Adriana Zapata, Jazmín Ayala)"}]
+    },
+
+    {
+      url: "beatriz",
+      nombre: "Beatriz Eugenia Cortés De La Rosa",
+      experiencia: 13,
+      nacimientoLugar: "Pasto, Nariño",
+      nacimientoFecha: 1983,
+      residencia: "Pasto, Nariño",
+      areas: "Teatro sala, teatro experimental.",
+      obras: [
+        {nombre: "Duendes de Noche - Musical", año: 2013},
+        {nombre: "Utétrica - Thriller Kármico", año: 2023},
+      ],
+      creacionColectiva: [
+        {nombre: "Quilla Raymi, cuentos de tesoros, espantos y otros encantos", año: 2012}
+      ],
+      reconocimientos: [
+        {nombre: 'Portafolio de estímulos “La Gran Capital” de la Alcaldía de Pasto, categoría premio de Dramaturgia con  Utétrica - Thriller kármico', año: 2022},
+        {nombre: 'Programa Departamental de Estímulos, categoría beca de investigación y/o creación artística con Utétrica - Thriller Kármico', año: 2024},
+      ],
+      perfil: 'Escritora de ficción, dramaturga y artista escénica, con una sólida trayectoria en la creación y gestión cultural. Actualmente, asesora en procesos de escritura creativa y en el diseño de proyectos culturales, liderando espacios formativos con enfoque en salud mental. Es jefa de Proyectos en Sala Mínima, donde impulsa iniciativas escénicas innovadoras. \n Licenciada en Música y Maestra en Diseño, Gestión y Dirección de Proyectos, ha recibido formación actoral con destacados maestros y ha sido parte de varias compañías teatrales, desempeñando roles de actriz, música, gestora cultural, pedagoga y dramaturga. Ha participado en tres proyectos escénicos premiados con becas del Ministerio de Cultura. \n En 2013, publicó el ensayo Naturaleza, un Ensayo para la Diversidad en el libro Biodrama-Biodharma. En 2022, ganó el Premio de Dramaturgia del Portafolio de Estímulos Pasto la Gran Capital por su obra Utétrica - Thriller Kármico, estrenada en 2023, donde también se desempeña como directora escénica. Su trabajo se caracteriza por explorar nuevas formas de narrar y conectar con el público a través del arte.',
+      foto: "./assets/Beatriz/FotografíaPortada.jpg",
+      galeria: ['./assets/Beatriz/FotografíaObraUtétrica2023.jpg', './assets/Beatriz/FotografíaObraUtétrica2023-2.jpg', './assets/Beatriz/FotografíaObraUtétrica2023-3.jpg', './assets/Beatriz/FotografíaObraUtétrica2023-4.jpg', './assets/Beatriz/FotografíaUtétricaTaller.jpg', './assets/Beatriz/FotografíaObraUtétrica2024-3.jpg', './assets/Beatriz/FotografíaObraUtétrica2024-2.jpg', './assets/Beatriz/FotografíaObraUtétrica2024-1.jpg'],
+      audio: [{file: "./assets/Beatriz/Audio-SoliloquiosPatricia-Utétrica.mp3", nombre:"Utétrica- Thriller Kármico", desc:"Fragmento Soliloquios de Patricia (voz de Beatriz Cortés)"}]
+    },
+
+    {
+      url: "leidy",
+      nombre: "Leidy Johana Hidalgo Salas",
+      experiencia: 4,
+      nacimientoLugar: "Pasto, Nariño",
+      nacimientoFecha: 1994,
+      residencia: "Pasto, Nariño",
+      areas: "Teatro sala, teatro callejero, teatro clown, circo.",
+      obras: [
+        {nombre: "Alzheimer, pieza de teatro sala", año: 2018},
+        {nombre: "Prohibido el ingreso a vendedores ambulantes, número de circo", año: 2019},
+        {nombre: "¿Qué nos pasó?, número de circo", año: 2022},
+        {nombre: "Desempolvar lo invisible, obra de teatro", año: 2024}
+      ],
+      creacionColectiva: [
+        {nombre: "Nada pasa, obra de teatro", año: 2021},
+        {nombre: 'Qué ruido hace el silencio, con <a href="./casita.html?nombre=carolina">Angie Carolina Rodríguez</a>', año: 2023}
+      ],
+      reconocimientos: [
+        {nombre: 'Reconocimiento por  la obra de teatro “Qué ruido hace el silencio” otorgado por Fundación Antropomorfa', año: 2023},
+        {nombre: 'Convocatoria Pública Departamental de Estímulos “Mi Nariño Cultura Viva” categoría creación, con “Qué ruido hace el silencio”', año: 2023},
+        {nombre: 'Portafolio de estímulos “La Gran Capital” de la Alcaldía de Pasto, categoría teatro, investigación creación de obras de teatro de hasta 4 personas, con Desempolvar lo invisible', año: 2024},
+      ],
+      perfil: 'Leidy Hidalgo es dramaturga, actriz y artista escénica con 18 años de experiencia en el teatro. Es Ingeniera Ambiental egresada de la Universidad de Nariño, y Maestrante en Gobernanza en Áreas Protegidas y Gestión del Recurso Biológico de la Universidad El Bosque. Su trayectoria dramatúrgica comenzó de manera intuitiva desde niña en la escritura de poesía y más adelante, en la creación de textos escénicos dentro de las compañías en las que participaba, en géneros como Teatro Calle, Teatro Sala, Teatro Comunitario, Teatro Clown, Circo, Teatro Experimental e Improvisación. A través de estas prácticas, descubrió su vocación como dramaturga y poeta, fusionando su experiencia escénica con sus sentires en la escritura. \n Su obra se caracteriza por la autoficción, utilizando su contexto barrial y social como base para crear historias que reflejan su identidad y la de su comunidad. A través de la dramaturgia, Leidy establece un puente entre lo personal y lo colectivo, llevando a la escena las realidades de su entorno y convirtiendo su proceso creativo en un espacio de reflexión sobre la sociedad y la identidad. \n Su trabajo destaca por su autenticidad y compromiso social, fusionando lo íntimo y lo colectivo para generar un diálogo profundo con la audiencia y transformar la percepción de las realidades marginadas y de las feminidades invalidadas.',
+      foto: "./assets/Leidy/FotoPortada.jpg",
+      galeria: ['./assets/Leidy/1.jpg', './assets/Leidy/2.jpg', './assets/Leidy/3.jpg', './assets/Leidy/4.jpg', './assets/Leidy/5.jpg', './assets/Leidy/6.jpg', './assets/Leidy/7.jpg', './assets/Leidy/8.jpg', './assets/Leidy/9.jpg', './assets/Leidy/10.jpg', './assets/Leidy/11.jpg', './assets/Leidy/12.jpg', './assets/Leidy/13.jpg', './assets/Leidy/14.jpg', './assets/Leidy/15.jpg', './assets/Leidy/16.jpg', './assets/Leidy/17.jpg', './assets/Leidy/18.jpg', './assets/Leidy/19.jpg'],
+      audio: [{file: "./assets/Leidy/Audio-DesempolvarLoInvisible-Fragmento.mp3", nombre:"Desempolvar lo Invisible", desc:"Fragmento de Obra (voz de Leidy Hidalgo)"}]
+    },
+
+    {
+      url: "alejandra",
+      nombre: "Alejandra Viteri Eraso",
+      experiencia: 8,
+      nacimientoLugar: "Pasto, Nariño",
+      nacimientoFecha: 1994,
+      residencia: "Pasto, Nariño",
+      areas: "Teatro sala y teatro calle.",
+      obras: [
+        {nombre: "Amelia 1… 2… 3, (escuela aguaguarte)", año: 2017},
+        {nombre: "Juan Camilo... ¿Barrera?, (escuela aguaguarte)", año: 2020},
+        {nombre: 'Manchas, Monólogo, (taller virtual de Teatro “registro de las muertes corporales en el teatro”, Universidad de Nariño)', año: 2020},
+        {nombre: "Retratos de las Automujeres, (taller de dramaturgia sala mínima)", año: 2024}
+      ],
+      creacionColectiva: [
+        {nombre: "Uhúru, (escuela aguaguarte)", año: 2016},
+        {nombre: "Sin Nombre, (escuela aguaguarte)", año: 2017},
+        {nombre: "Ahí Están Pintados, (montaje teunar)", año: 2017},
+        {nombre: "Divina Soledad, (montaje teunar)", año: 2018},
+        {nombre: "La Ceniza de los Párpados, (teatro la guagua)", año: 2018},
+        {nombre: "Cuentos de Alejandro Macaulay, (escuela aguaguarte)", año: 2018},
+        {nombre: "Todos alguna vez migramos, (escuela aguaguarte)", año: 2019},
+        {nombre: "Estampa Familia Castañeda (comparsa teatral, teatro la guagua, carnavales de negros y blancos)", año: 2020},
+        {nombre: "ECOS de la Loma, Mujeres en Movimiento, (in-surgesta, Bogotá D.C)", año: 2021},
+        {nombre: "La Rebelión en la Granja, (montaje unicornio teatro)", año: 2022},
+        {nombre: "El Quirquincho (montaje unicornio teatro)", año: 2022},
+        {nombre: "WANDERFUL, Anotaciones para Prostituir un Corazón, (VISO Atelier)", año: 2024},
+      ],
+      reconocimientos: [
+        {nombre: 'Primer Puesto en I Concurso de Cuentos para primera Infancia del Museo Taminango', año: 2021},
+        {nombre: 'Beca de Creación en Teatro Comunitario “Nuestro Barrio”, Programa Nacional de Estímulos Ministerio de Cultura. Memoria a Pata: Recorridos Memorimaginados (Trabajo Colectivo In-Surgesta)', año: 2021},
+        {nombre: 'Primer puesto Concurso de poesía "Homenaje a la historia de Andrea" Proyecto "Un Viaje de Paz" En homenaje a víctimas LGBTIQ+ del conflicto armado Organización Colombia Diversa', año: 2022},
+        {nombre: 'Convocatoria Jóvenes por el Cambio “Tejidos Fuera - Dentro: Relatos del Cuerpo” (Talleres Artísticos para salud Mental) (Trabajo Colectivo Melissa Jiménez, Isabel Micanquer, Alejandra Viteri)', año: 2023},
+        {nombre: 'Premio a obra literaria inédita Convocatoria Cultura Viva, Retratos de las Automujeres (Versión poemario)', año: 2023},
+        {nombre: 'Programa Departamental de Estímulos  de la Gobernación de Nariño, categoría premio a obra literaria inédita (Versión poemario de la obra) con Juan Camilo… ¿Barrera?', año: 2024},
+        {nombre: 'Beca de Creación Inter, multi - transdisciplinar Convocatoria Nacional de Estímulos Ministerio de las Culturas, las Artes y los Saberes,Obra: WANDERFUL: Anotaciones para Prostituir un Corazón (Trabajo Colectivo VISO Atelier)', año: 2024},
+      ],
+      perfil: 'Inició su trayectoria en el teatro en 2016, en la Escuela Aguaguarte. Su escritura nace de la necesidad de dar vida a lo que comúnmente pasa desapercibido, explorando temas como la duda, la verdad y la influencia de los afectos en los procesos creativos. A través de su obra, reflexiona sobre la responsabilidad afectiva en el teatro y cómo esta puede generar redes entre los creadores y creadoras y la escena. \n Su relación con la escritura comenzó en la infancia, pero fue en su adolescencia, al integrarse en un grupo de comunicaciones, donde profundizó en su pasión por las letras. En 2020, escribió su primer monólogo inspirado en las calles de Pasto, lo que marcó el inicio de su carrera como dramaturga. En 2022, su obra se orientó hacia los roles de género, consolidando la escritura como una herramienta para procesar experiencias y mejorar su bienestar personal. \n Desde 2016, su caminar dramático ha estado marcado por la creación de personajes y textos que exploran su contexto social, transformando lo cotidiano en materia artística.',
+      foto: "./assets/Alejandra/FotoPortada.jpg",
+      galeria: ['./assets/Alejandra/Fotografía - Ecos de la loma - Alejandra .jpg', './assets/Alejandra/Fotografía - El sueño de Alejandro Macaulay - Alejandra .jpg', './assets/Alejandra/Fotografía - Retratos de las Automujeres - Alejandra.jpg', './assets/Alejandra/Fotografía - Todos alguna vez migramos - Alejandra.jpg', './assets/Alejandra/Fotografía - Wanderful - Alejandra.jpg', './assets/Alejandra/Fotografía- Ceniza de los Párpados- Alejandra.jpg', './assets/Alejandra/Fotografía Juan Camilo... ¿Barrera_- Alejandra.jpg'],
+      audio: [{file: "./assets/Alejandra/FragmentoPoemario-JuanCamilo…¿Barrera.mp3", nombre:"Juan Camilo … ¿Barrera?, 2025", desc:"Fragmento Poemario (voz de Alejandra Viteri)"}]
+    },
   ]
   

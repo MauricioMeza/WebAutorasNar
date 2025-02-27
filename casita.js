@@ -20,9 +20,6 @@ const params = new URLSearchParams(window.location.search);
 const url = params.get('nombre');
 autoraIndex = data.findIndex(item => item.url === url);
 
-if(autoraIndex == -1){
-  window.location.href = "./notFound"
-}
 
 //----- Info Data General -------
 nomeAutora.innerHTML = data[autoraIndex].nombre;
