@@ -83,15 +83,15 @@ var data = [
       residencia: "Pasto - Medellin",
       areas: "Teatro calle, circo, teatro sala, títeres y objetos, teatro comunitario, teatro infantil, clown dramático, teatro experimental, performance, investigación en filosofía teatral.",
       obras: [
+        {nombre: "Valium 10 - 25 pepas", año: 2012},
         {nombre: "Extrasolar", año: 2015},
         {nombre: "Una mujer de 4.0 en conducta", año: 2017},
-        {nombre: "Valium 10 - 25 climax", año: 2012},
         {nombre: "Lesa humanidad de un mango", año: 2021},
         {nombre: "Ataraxia", año: 2021},
         {nombre: "Metasujeto o la paradoja de existir", año: 2021},
         {nombre: "Contradiálogo", año: 2022},
         {nombre: "Vacío", año: 2023},
-        {nombre: "La Resistencia", año: 2024},
+        {nombre: "La Risistencia", año: 2024},
         {nombre: "Polinices", año: 2024},
         {nombre: "Exilio", año: 2024},
       ],
@@ -102,11 +102,13 @@ var data = [
       ],
       reconocimientos: [
         {nombre: "Portafolio de estímulos “La gran capital” de la Alcaldía de Pasto, categoría teatro, premio texto teatral obra inédita con Metasujeto o la paradoja de existir", año: 2021},
+        {nombre: "Dramaturgias, Mujeres del Sur con ATARAXIA - ISBN: 978-958-53721-0-8", año: 2021},
         {nombre: "Tesis de grado meritoria, Licenciatura en Filosofía y Letras de la Facultad de Ciencias Sociales y Humanidades de la  Universidad de Nariño con ATARAXIA", año: 2022},
-        {nombre: "Dramaturgias de Mujeres del Sur con ATARAXIA -  ISBN: 978-958-53721-0-8", año: 2024},
         {nombre: "Panorama teatral colombiano: Dramaturgias emergentes -  ISBN: 978-628-01-5716-0"},
+        {nombre: "Programa Departamental de Estímulos  de la Gobernación de Nariño, categoría teatro, investigación y/o creación artística con Polinices o el tránsito de lo sin-forme", año: 2024},
+        {nombre: "Portafolio de estímulos “La Gran Capital” de la Alcaldía de Pasto, categoría teatro, investigación creación de obras de teatro de hasta 8 personas, con Polinices o el tránsito de lo sin-forme", año: 2024},
       ],
-      perfil: "Licenciada en Filosofía y Letras y artista investigadora de la ciudad de Pasto. Hace 17 años se desenvuelve como actriz dentro de compañías de mediana y larga trayectoria donde, además, ha recibido formación en teatro sala, clown dramático, calle, circo y dirección. Su trayectoria dramatúrgica se ha fortalecido de la mano de maestros como Sergio Blanco, Paco Zarzoso, Verónica Musalem, Juan Pablo Troncoso y Ana Melo. \n Su investigación se centra en el teatro como medio para la reparación simbólica y la construcción de paz en su país. Con base en esto, ha venido trabajando como lazo social del Centro Nacional de Memoria Histórica apoyando iniciativas en los departamentos de Nariño y Putumayo. \n Esta dramaturga se interesa por los clásicos del teatro, especialmente por su ruptura en el contexto social actual y su vigencia en una realidad latinoamericana. Además, destaca su interés en la teoría teatral como puente para la comprensión del problema escénico en la creación.",
+perfil: "Licenciada en Filosofía y Letras y artista investigadora de la ciudad de Pasto. Hace 17 años se desenvuelve como actriz dentro de compañías de mediana y larga trayectoria donde, además, ha recibido formación en teatro sala, clown dramático, calle, circo y dirección. Su trayectoria dramatúrgica se ha fortalecido de la mano de maestros como Sergio Blanco, Paco Zarzoso, Verónica Musalem, Juan Pablo Troncoso y Ana Melo. Su investigación se centra en el teatro como medio para la reparación simbólica y la construcción de paz en su país. Con base en esto, ha venido trabajando como lazo social del Centro Nacional de Memoria Histórica apoyando iniciativas en los departamentos de Nariño y Putumayo. \n Esta dramaturga se interesa por los clásicos del teatro, especialmente por su ruptura en el contexto social actual y su vigencia en una realidad latinoamericana. Además, destaca su interés en la teoría teatral como puente para la comprensión del problema escénico en la creación.",
       foto: "./assets/Silvia/FotografíaPortada-Silvia_.jpg",
       galeria: ['./assets/Silvia/Fotografía-Ataraxia-Silvia.jpg', './assets/Silvia/Fotografía-Clown-Silvia.jpg', './assets/Silvia/Fotografía-Clown2-Silvia.jpg', './assets/Silvia/Fotografía-ELAuca-Emiro-Silvia.jpg', './assets/Silvia/Fotografía-Lesa-Silvia.jpg', './assets/Silvia/Fotografía-PIE-Silvia.jpg', './assets/Silvia/Fotografía-Retratos-Silvia.jpg', './assets/Silvia/FotografíaPortada-Silvia_.jpg'],
       audio: [{file: "./assets/Silvia/Audio-ataraxia-2024.mp3", nombre:"Ataraxia", desc:"Fragmento de Obra (Voz - Silvia Rodríguez)"}]
@@ -295,7 +297,7 @@ var data = [
 
     {
       url: "alejandra",
-      nombre: "Alejandra Viteri Eraso",
+      nombre: "Maria Alejandra Viteri Eraso",
       experiencia: 8,
       nacimientoLugar: "Pasto, Nariño",
       nacimientoFecha: 1994,
@@ -312,7 +314,7 @@ var data = [
         {nombre: "Sin Nombre, (escuela aguaguarte)", año: 2017},
         {nombre: "Ahí Están Pintados, (montaje teunar)", año: 2017},
         {nombre: "Divina Soledad, (montaje teunar)", año: 2018},
-        {nombre: "La Ceniza de los Párpados, (teatro la guagua)", año: 2018},
+        {nombre: 'La Ceniza de los Párpados, (teatro calle, tetro la guagua), con <a href="./casita.html?nombre=liliana">Liliana Timaná Pantoja</a>', año: 2018},
         {nombre: "Cuentos de Alejandro Macaulay, (escuela aguaguarte)", año: 2018},
         {nombre: "Todos alguna vez migramos, (escuela aguaguarte)", año: 2019},
         {nombre: "Estampa Familia Castañeda (comparsa teatral, teatro la guagua, carnavales de negros y blancos)", año: 2020},
@@ -334,6 +336,163 @@ var data = [
       foto: "./assets/Alejandra/FotoPortada.jpg",
       galeria: ['./assets/Alejandra/Fotografía - Ecos de la loma - Alejandra .jpg', './assets/Alejandra/Fotografía - El sueño de Alejandro Macaulay - Alejandra .jpg', './assets/Alejandra/Fotografía - Retratos de las Automujeres - Alejandra.jpg', './assets/Alejandra/Fotografía - Todos alguna vez migramos - Alejandra.jpg', './assets/Alejandra/Fotografía - Wanderful - Alejandra.jpg', './assets/Alejandra/Fotografía- Ceniza de los Párpados- Alejandra.jpg', './assets/Alejandra/Fotografía Juan Camilo... ¿Barrera_- Alejandra.jpg'],
       audio: [{file: "./assets/Alejandra/FragmentoPoemario-JuanCamilo…¿Barrera.mp3", nombre:"Juan Camilo … ¿Barrera?, 2025", desc:"Fragmento Poemario (voz de Alejandra Viteri)"}]
+    },
+
+    {
+      url: "diana",
+      nombre: "Diana Sofía Zarama",
+      experiencia: 7,
+      nacimientoLugar: "Pasto, Nariño",
+      nacimientoFecha: 1989,
+      residencia: "Pasto, Nariño",
+      areas: "Teatro sala, Teatro títeres u objetos, Teatro comunitario, Teatro clown, Improvisación.",
+      obras: [
+        {nombre: "Quién Mató a Mario Francisco (clown)", año: 2016},
+        {nombre: "Historias de los Hombres Pájaro (impro de fantasía con máscara y música)", año: 2018},
+        {nombre: 'La Princesa Desencantada (clown)', año: 2019},
+        {nombre: "Las Tres Brujas (teatro con máscara)", año: 2022},
+        {nombre: "La Culpa es de Eva (monólogo)", año: 2022},
+        {nombre: "Ciudad Brutal (impro)", año: 2022},
+        {nombre: "En Busca de un Corazón Puro (títeres/tejido)", año: 2023},
+        {nombre: "El Regalo Prometido", año: 2023},
+        {nombre: "Madame Magnolia (impro)", año: 2023},
+      ],
+      perfil: 'Diana Zarama es una actriz, directora, productora y dramaturga con 12 años de experiencia en la escena teatral de Pasto. Su trabajo ha explorado diversas técnicas como el clown, la improvisación, el bufón, la stand-up comedy, el teatro dramático, los títeres y la máscara. Actualmente investiga el teatro como vehículo para explorar el deseo sexual y la emoción, con un enfoque en las mujeres artistas escénicas en Nariño. \n Sus pilares son el clown y la improvisación, que le han permitido expresar aspectos profundos de su ser, como la sexualidad y la sensualidad, a través del dark clown. Desde 2015, la improvisación ha marcado un quiebre creativo en su vida, enseñándole a "vivir la escena" y a concebir el teatro como un convivio. Su trabajo también busca deconstruir estereotipos de género y abrir espacio para la reflexión sobre el deseo y la libertad creativa. \n Con la convicción de que todo ser humano puede crear, esta dramaturga fusiona distintos lenguajes artísticos, como la máscara, los títeres, la improvisación y el clown, para generar propuestas que invitan a repensar la vida y el teatro. \n Además, Diana Zarama es profesional en Comercio Internacional y Mercadeo, y actualmente cursa una maestría en Artes Visuales, lo que le permite integrar y enriquecer sus conocimientos en el campo de las artes escénicas con nuevas perspectivas visuales.',
+      foto: "./assets/Diana/FotoPortada.jpg",
+      galeria: ['./assets/Diana/1.jpg', './assets/Diana/3.jpg', './assets/Diana/4.jpg', './assets/Diana/5.jpg', './assets/Diana/6.jpeg', './assets/Diana/7.jpeg', './assets/Diana/8.jpeg', './assets/Diana/9.jpeg', './assets/Diana/10.jpeg', './assets/Diana/11.jpeg', './assets/Diana/12.jpeg', './assets/Diana/13.jpeg', './assets/Diana/14.jpeg', './assets/Diana/15.jpeg', './assets/Diana/16.jpeg', './assets/Diana/17.jpeg', './assets/Diana/18.jpeg', './assets/Diana/19.jpeg'],
+      audio: [{file: "./assets/Diana/AudioLaCulpaEsDeEva.mp3", nombre:"La Culpa es de Eva, 2022", desc:"Fragmento (voz de Diana Zarama)"}]
+    },
+
+    {
+      url: "liliana",
+      nombre: "Liliana Timaná Pantoja",
+      experiencia: 4,
+      nacimientoLugar: "Pasto, Nariño",
+      nacimientoFecha: 1989,
+      residencia: "Pasto, Nariño",
+      areas: "Teatro calle, Teatro títeres u objetos, Teatro clown, performance, audiovisual.",
+      obras: [
+        {nombre: "A fuego lento, (teatro sala)", año: 2021},
+      ],
+      creacionColectiva: [
+        {nombre: "Ciudad plastificada, (títeres y animación de objetos)", año: 2015},
+        {nombre: "Sal, (teatro sala)", año: 2017},
+        {nombre: "Al diablo con el diablo", año: 2017},
+        {nombre: "La piedra del Duende, (títeres)", año: 2018},
+        {nombre: 'La Ceniza de los Párpados, (teatro calle, tetro la guagua), con <a href="./casita.html?nombre=alejandra">Maria Alejandra Viteri Eraso</a>', año: 2018},
+      ],
+      perfil: 'Liliana Timaná Pantoja es licenciada en Artes Visuales con más de 10 años de experiencia en proyectos y formación en artes visuales, plásticas y escénicas. Su obra explora la relación entre el cuerpo, los sentimientos y la escritura, especialmente en los territorios heridos pero que han resistido mediante el arte y sus tradiciones. A través de su trabajo docente y de gestión cultural, acompaña procesos de mujeres y rescata la tradición oral de los pueblos, valorando la diversidad cultural y ambiental de los territorios. \n Liliana inició su recorrido teatral con la creación colectiva de Ciudad Plastificada, La ceniza los párpados y ha continuado explorando diversas formas artísticas, como en SAL, LA PIEDRA DEL DUENDE, donde aborda el cuidado del medio ambiente. Durante la pandemia, comenzó a escribir en solitario y creó A fuego lento, una obra introspectiva que reflexiona sobre la idea de ser mujer, el acto de cocinar y los nudos emocionales que limitan la libertad personal. \n Además de su trabajo en teatro, ha incursionado en el teatro de sombras, y su obra siempre busca conectar con lo ancestral y lo humano, transformando las realidades que enfrenta a través de la escritura y la expresión artística.',
+      foto: "./assets/liliana/FotoPortada.jpg",
+      //galeria: ['./assets/Alejandra/Fotografía - Ecos de la loma - Alejandra .jpg', './assets/Alejandra/Fotografía - El sueño de Alejandro Macaulay - Alejandra .jpg', './assets/Alejandra/Fotografía - Retratos de las Automujeres - Alejandra.jpg', './assets/Alejandra/Fotografía - Todos alguna vez migramos - Alejandra.jpg', './assets/Alejandra/Fotografía - Wanderful - Alejandra.jpg', './assets/Alejandra/Fotografía- Ceniza de los Párpados- Alejandra.jpg', './assets/Alejandra/Fotografía Juan Camilo... ¿Barrera_- Alejandra.jpg'],
+      //audio: [{file: "./assets/Alejandra/FragmentoPoemario-JuanCamilo…¿Barrera.mp3", nombre:"Juan Camilo … ¿Barrera?, 2025", desc:"Fragmento Poemario (voz de Alejandra Viteri)"}]
+    },
+
+    {
+      url: "sintia",
+      nombre: "Sintia Lorena Angulo Salazar",
+      experiencia: 4,
+      nacimientoLugar: "Cali, Valle del Cauca",
+      nacimientoFecha: 1984,
+      residencia: "Tumaco, Nariño",
+      areas: "Teatro comunitario, Teatro experimental.",
+      obras: [
+        {nombre: "La magia de la marimba", año: 2021},
+      ],
+      reconocimientos: [
+        {nombre: 'Maldita maravilla. Maletín de relatos pacíficos. Author, Sintia Angulo. Publisher, Ministerio de Medio Ambiente y Desarrollo Sostenible. ISBN, 9585763699', año: 2017},
+        {nombre: 'Equipo interdisciplinario ORIENTACIONES METODOLÓGICAS PARA LA CREACIÓN COLECTIVA MULTI, INTER Y TRANSDISCIPLINAR. ISBN: 978-958-53224-4-8 ©Orientaciones Metodológicas.', año: 2021},
+        {nombre: 'Dramaturgias, Mujeres del Sur ISBN: 978-958-53721-0-8 Pasto, Tumaco, Ipiales (Nariño)', año: 2021},
+      ],
+      perfil: 'Licenciada en Arte Dramático por la Universidad del Valle, cuenta con más de trece años de experiencia integrando la creación, el arte y la comunicación en el sector cultural del Pacífico Colombiano. Dramaturga, periodista y consultora cultural, ha desarrollado una carrera comprometida con la visibilización de las comunidades negras, especialmente en Tumaco, donde reside desde 2013. Desde la producción de obras teatrales hasta la asesoría en procesos culturales y de construcción de paz, ha trabajado para fortalecer iniciativas comunitarias y dar voz a territorios históricamente marginados. \n Como dramaturga, su obra está profundamente enraizada en las realidades sociales y culturales del sur del país, con un enfoque poético y político que entrelaza lo personal con lo colectivo. Ha creado piezas como La Magia de la Marimba, Mundo Sin Agua y Cuentos de la Embajadora del Pacífico, integrando elementos de la tradición oral, la marimba y la poesía afrodescendiente. A través del grupo Afroteatro Digital de Tumaco, espacio independiente que ella misma fundó, conjuga arte, comunicación y diversidad como formas de resistencia y construcción de identidad. \n Sus publicaciones incluyen el libro Mujeres Dramaturgas del Sur – La Magia de la Marimba, el Maletín de Relatos del Pacífico, y su colaboración en Orientaciones Metodológicas para la Creación Colectiva Inter, Multi y Transdisciplinar, donde aporta a nuevas formas de creación artística colaborativa. Su práctica artística y pedagógica se alimenta de la poesía, en especial de la décima cimarrona, con la que dialoga desde una perspectiva afrofeminista, crítica y ancestral. \n Sintia Lorena entiende el teatro no como una expresión estética aislada, sino como un lugar seguro y un acto político capaz de transformar las memorias del cuerpo y del territorio. Para ella, el escenario es un espacio donde la infancia, la muerte, la soledad y las huellas del conflicto se entretejen con la palabra, la música y la resistencia.',
+      foto: "./assets/Sintia/FotoPortada.jpg",
+      galeria: ['./assets/Sintia/Foto1.jpeg', './assets/Alejandra/Foto2.jpeg', './assets/Alejandra/Foto3.jpeg'],
+      //audio: [{file: "./assets/Sintia/SintiaAudio.mp3", nombre:"Fragmento", desc:"(voz de Sintia Angulo)"}]
+    },
+
+    {
+      url: "constanza",
+      nombre: "María Constanza Solarte Burbano",
+      experiencia: 14,
+      nacimientoLugar: "Pasto, Nariño",
+      nacimientoFecha: 1993,
+      residencia: "Cali, Valle del Cauca",
+      areas: "Teatro calle, Teatro sala, Teatro comunitario, Teatro experimental.",
+      obras: [
+        {nombre: "La tormenta", año: 2010},
+        {nombre: "Con las orejas rojas", año: 2011},
+        {nombre: 'Las espigas imitan la forma del fuego', año: 2021},
+        {nombre: "Bola 8", año: 2023},
+        {nombre: "La Mata Mala", año: 2024},
+        {nombre: "Emperatriz", año: 2024},
+        {nombre: "Agradezco estar fuera del infierno", año: 2025},
+      ],
+      creacionColectiva: [
+        {nombre: 'Utétrica, thriller kármico (Colombia), con <a href="./casita.html?nombre=beatriz">Beatriz Eugenia Cortés De La Rosa</a>', año: 2022},
+        {nombre: "Yerbateras (Cali)", año: 2022},
+        {nombre: "Just a bit (Italia)", año: 2024},
+        {nombre: "Horizonte (Brasil)", año: 2024},
+      ],
+      reconocimientos: [
+        {nombre: 'Invitada a escribir y dirigir la obra "La Mata Mala" Drama rural de mujeres para el grupo Chakana Teatro del municipio de la Cruz, Nariño, gracias a la beca de la Fundación Santander que se estrenó en Marzo del 2024', año: 2024},
+        {nombre: 'Participó con el cuento breve Dicotiledóneas como parte del libro La historia con ellas (Mujeres narrando a mujeres), 2024, una recopilación de relatos escritos por autoras que narran desde y sobre lo femenino.', año: 2024},
+        {nombre: 'Ganadora Estímulo regional Cultura Convoca de la Dirección administrativa de Nariño 2023, para la creación de guión y textos de dramaturgia, con el proyecto Contra-take, una investigación sobre una forma particular del humor en Pasto, resultante en el texto dramático "bola 8"', año: 2023},
+        {nombre: 'Dramaturgias, Mujeres del Sur con Las espigas imitan la forma del fuego -  ISBN: 978-958-53721-0-8', año: 2021},
+        {nombre: 'Panorama teatral colombiano: Dramaturgias emergentes -  ISBN: 978-628-01-5716-0'},
+        {nombre: 'Ganadora del Estímulo a la creación de dramaturgia para teatro de la Secretaría de Cultura de Pasto.'},
+      ],
+      perfil: 'Es dramaturga, directora y creadora escénica, fundadora de Sala Mínima, un espacio autogestionado que articula el arte, la pedagogía y el pensamiento crítico con enfoque de género. Desde este lugar, ha generado encuentros creativos que cuestionan las estructuras jerárquicas, los discursos hegemónicos y las dinámicas nocivas del mundo artístico, apostando por procesos colectivos y espacios seguros, aunque no idealizados, donde se acompaña y se sostiene a, quienes ella llama, artistas en reparación. \n Su formación y experiencia incluyen cinco años de participación en el programa internacional del Teatro Nazionale della Toscana en Italia, así como colaboraciones actuales con artistas de Brasil e Italia como directora y codramaturga. Participó del programa R-evolution 2024, proyecto de coproducción internacional del Teatro Nuovo Sanità, y ha sido reconocida con becas y estímulos de instituciones como Iberescena, Ministerio de Cultura, Cultura Convoca y Cultura Viva de Pasto. \n Entre sus obras destacan Las espigas imitan la forma del fuego (2021), escrita durante un proceso de ruptura dentro de una compañía, donde la escritura se convirtió en un refugio y un ejercicio de sanación; Bola 8 (2023), una investigación dramatúrgica sobre el humor pastuso; y La Mata Mala (2024), un drama rural escrito para y con mujeres de la comunidad de Las Ánimas, Nariño. Su escritura escénica nace desde la intuición y el detalle cotidiano, como un espacio para la pregunta, la rabia, la ternura y el deseo de entender(se) a través del arte. \n Concibe el teatro como un acto profundamente político y colectivo, más allá del mito del genio solitario o del arte por el arte. Su trabajo se alinea con el pensamiento decolonial, el feminismo bastardo y el teatro expandido, proponiendo una práctica que desestabiliza las estructuras cis-hetero-patriarcales aún presentes en muchos espacios creativos. Para esta dramaturga, el teatro no es un templo, es territorio: un lugar que nadie puede quitarte, un lugar donde el acompañamiento, la fricción y la creación a varias manos dan lugar a nuevas voces, nuevas preguntas y nuevas formas de existencia.',
+      foto: "./assets/Constanza/FotoPortada.jpg",
+      galeria: ['./assets/Constanza/Foto1-credSaraIsabelaMartínez.jpg', './assets/Constanza/Foto2credSaraIsabelaMartínez.jpg', './assets/Constanza/Foto3CredLeoParca.jpg', './assets/Constanza/Foto4CredLeoParca.jpg', './assets/Constanza/Foto5-credGabrielaRodriguez.jpg', './assets/Constanza/Foto6-credGabrielaRodriguez.jpg'],
+    },
+
+    {
+      url: "eliana",
+      nombre: "Eliana Marcela Guerrero Ordóñez",
+      experiencia: 6,
+      nacimientoLugar: "Pasto, Nariño",
+      nacimientoFecha: 1988,
+      residencia: "La Cruz (vereda Las Ánimas)",
+      areas: "Teatro calle, Teatro sala, Teatro comunitario, Teatro experimental, Performance, Teatro escolar.",
+      obras: [
+        {nombre: "La pesadilla de la maestra", año: 2019},
+        {nombre: "La leyenda de la danza dorada", año: 2019},
+        {nombre: 'Juana Volcán', año: 2019},
+        {nombre: "El Guando", año: 2019},
+        {nombre: "EstrEllas", año: 2019},
+        {nombre: "Presagio de tres de Mayo", año: 2021},
+      ],
+      creacionColectiva: [
+        {nombre: "El Legado de Las Ánimas", año: 2022},
+      ],
+      reconocimientos: [
+        {nombre: 'Dramaturgias de Mujeres del Sur con EstrEllas - ISBN: 978-958-53721-0-8', año: 2021},
+        {nombre: 'Beca de creación teatro calle Cultura Viva 2022 Gobernación de Nariño, montaje primera escena "Antes del Principio" de la obra EstrEllas.', año: 2022},
+        {nombre: 'Beca de Creación en Teatro Calle 2023 Ministerio de Cultura, montaje EstrEllas.', año: 2023},
+      ],
+      perfil: 'Actriz, gestora cultural y educadora popular, profesional en Comercio Internacional y Mercadeo, especialista en Educación, Cultura y Política. Su recorrido artístico inicia en Ciudad Teatral y Calle Teatro del TEUNAR (Teatro Estudio de la Universidad de Nariño), desde donde comprendió el teatro como una herramienta vital para el pensamiento, la transformación social y el trabajo comunitario. \n Durante su etapa universitaria integró diversos grupos independientes de teatro, danza y circo, experiencias que la llevaron a vincular el arte con procesos pedagógicos en los territorios. Desde entonces, desarrolla una práctica que articula creación escénica, formación y acción política, entendiendo el arte no solo como fin, sino como medio para movilizar saberes sobre género, ecología y memoria colectiva. \n En 2015 llegó al municipio de La Cruz (Nariño), donde inició un trabajo teatral con comunidad víctima, dando origen a su dramaturgia EstrEllas, inspirada en las constelaciones y la celebración andina de la Chakana y la Cruz del Mayo. A partir de ahí, ha impulsado proyectos como el grupo Chakana del Mayo Teatro, la Escuela Rural Itinerante de Teatro, Chakasa Espacio Cultural Rural y el fortalecimiento de la escena comunitaria, promoviendo una estética cuidadosa desde y para el territorio. \n Su escritura se construye desde la escucha activa, recogiendo las voces de la comunidad como piezas de un rompecabezas que revelan memorias ocultas y conflictos históricos. En obras como El Legado de Las Ánimas, plantea diálogos entre la cosmovisión ancestral y las preguntas contemporáneas por la identidad, el despojo y la defensa del territorio. \n Concibe el teatro comunitario como un proceso transformador, donde la obra es solo una parte de una experiencia colectiva que forma, moviliza y siembra conciencia crítica.',
+      foto: "./assets/Eliana/FotoPortada.jpg",
+      galeria: ['./assets/Eliana/Danza.jpg', './assets/Eliana/Eva-2013.jpg', './assets/Eliana/Foto.jpg', './assets/Eliana/Guaca.jpg', './assets/Eliana/Lagartijax.jpg', './assets/Eliana/RosaDelia.jpg', './assets/Eliana/Soraya.jpg', './assets/Eliana/Tajumbinaku.jpg'],
+      audio: [{file: "./assets/Eliana/RaícesReelato.mp3", nombre:"Raíces - Relato, 2020", desc:"(voz de Eliana Guerrero)"}]
+    },
+
+    {
+      url: "mercedes",
+      nombre: "Mercedes Mejía",
+      experiencia: 7,
+      nacimientoLugar: "Ipiales, Nariño",
+      nacimientoFecha: 1992,
+      residencia: "Bogotá D.C.",
+      areas: "Teatro sala, Teatro experimental.",
+      obras: [
+        {nombre: "SIMBALAWÊ", año: 2021},
+      ],
+      reconocimientos: [
+        {nombre: 'Dramaturgias, Mujeres del Sur. ISBN: 978-958-53721-0-8.', año: 2021},
+      ],
+      perfil: 'Actriz y Maestra en Arte Dramático con énfasis en actuación de la Universidad El Bosque, y Especialista en Pedagogía de la Creatividad por la Universidad de Nariño. Su formación académica le ha permitido articular la creación escénica con la docencia, desarrollando una práctica artística sustentada en la investigación y en la exploración de nuevas formas de expresión. \n Desde temprana edad manifestó un profundo interés por la representación. Participó activamente en celebraciones y eventos culturales de su comunidad, lo que marcó el inicio de un camino vocacional. Durante su etapa escolar en Ipiales, el contacto con el teatro escolar y la influencia de docentes comprometidos con el arte la llevaron a integrar su primer grupo teatral y a asumir el escenario como un espacio de sentido. \n Su formación profesional en Bogotá estuvo motivada por el deseo de regresar a su territorio y aportar a la escena local. Sin embargo, ante la ausencia de estructuras institucionales que promovieran el ejercicio teatral, inició su recorrido en el colectivo Delirantes Teatro, donde consolidó su compromiso con la creación independiente. \n La escritura ha sido una constante en su vida. Inicialmente abordó la narrativa de manera anónima y digital, pero con el tiempo encontró en la dramaturgia un lenguaje propio, íntimo y simbólico. Su proyecto Simbalawe se configura como un diario escénico en el que convergen alter egos, emociones y memorias, alejándose de lo literal para construir un lenguaje poético y performativo. \n Ha incursionado en la conferencia performativa y se ha dedicado a la investigación de procesos escénicos desde una perspectiva crítica, sensible y situada. Su labor combina la actuación, la escritura, la pedagogía y la creación como herramientas para el pensamiento, la emoción y la transformación.',
+      foto: "./assets/Mercedes/FotoPortada.jpg",
+      galeria: ['./assets/Mercedes/Foto1.jpg', './assets/Mercedes/Foto2.jpg', './assets/Mercedes/Foto3.jpg', './assets/Mercedes/Foto4.jpg', './assets/Mercedes/Foto5.jpg', './assets/Mercedes/Foto6.jpg'],
+      audio: [{file: "./assets/Mercedes/SIMBALAWÊ-Mercedes.mp3", nombre:"SIMBALAWÊ", desc:"Fragmento (voz de Mercedes Mejía)"}]
     },
   ]
   
