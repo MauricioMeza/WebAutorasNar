@@ -177,6 +177,9 @@ section{
 /*----------------------*/
 /*------ Tiempo -------*/
 /*--------------------*/
+#content-time{
+    padding: 0 20px 0 20px;
+}
 #tiempo{
     background-color: #271f44;
     position: relative;
