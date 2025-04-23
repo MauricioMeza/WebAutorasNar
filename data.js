@@ -300,7 +300,7 @@ perfil: "Licenciada en Filosofía y Letras y artista investigadora de la ciudad 
       nombre: "Maria Alejandra Viteri Eraso",
       experiencia: 8,
       nacimientoLugar: "Pasto, Nariño",
-      nacimientoFecha: 1994,
+      nacimientoFecha: 1998,
       residencia: "Pasto, Nariño",
       areas: "Teatro sala y teatro calle.",
       obras: [
@@ -368,7 +368,7 @@ perfil: "Licenciada en Filosofía y Letras y artista investigadora de la ciudad 
       nombre: "Liliana Timaná Pantoja",
       experiencia: 4,
       nacimientoLugar: "Pasto, Nariño",
-      nacimientoFecha: 1989,
+      nacimientoFecha: 1983,
       residencia: "Pasto, Nariño",
       areas: "Teatro calle, Teatro títeres u objetos, Teatro clown, performance, audiovisual.",
       obras: [
@@ -382,9 +382,9 @@ perfil: "Licenciada en Filosofía y Letras y artista investigadora de la ciudad 
         {nombre: 'La Ceniza de los Párpados, (teatro calle, tetro la guagua), con <a href="./casita.html?nombre=alejandra">Maria Alejandra Viteri Eraso</a>', año: 2018},
       ],
       perfil: 'Liliana Timaná Pantoja es licenciada en Artes Visuales con más de 10 años de experiencia en proyectos y formación en artes visuales, plásticas y escénicas. Su obra explora la relación entre el cuerpo, los sentimientos y la escritura, especialmente en los territorios heridos pero que han resistido mediante el arte y sus tradiciones. A través de su trabajo docente y de gestión cultural, acompaña procesos de mujeres y rescata la tradición oral de los pueblos, valorando la diversidad cultural y ambiental de los territorios. \n Liliana inició su recorrido teatral con la creación colectiva de Ciudad Plastificada, La ceniza los párpados y ha continuado explorando diversas formas artísticas, como en SAL, LA PIEDRA DEL DUENDE, donde aborda el cuidado del medio ambiente. Durante la pandemia, comenzó a escribir en solitario y creó A fuego lento, una obra introspectiva que reflexiona sobre la idea de ser mujer, el acto de cocinar y los nudos emocionales que limitan la libertad personal. \n Además de su trabajo en teatro, ha incursionado en el teatro de sombras, y su obra siempre busca conectar con lo ancestral y lo humano, transformando las realidades que enfrenta a través de la escritura y la expresión artística.',
-      foto: "./assets/Liliana/NO-FOTO-VOCES-DE-MUJ-ESCENA.png",
-      //galeria: ['./assets/Alejandra/Fotografía - Ecos de la loma - Alejandra .jpg', './assets/Alejandra/Fotografía - El sueño de Alejandro Macaulay - Alejandra .jpg', './assets/Alejandra/Fotografía - Retratos de las Automujeres - Alejandra.jpg', './assets/Alejandra/Fotografía - Todos alguna vez migramos - Alejandra.jpg', './assets/Alejandra/Fotografía - Wanderful - Alejandra.jpg', './assets/Alejandra/Fotografía- Ceniza de los Párpados- Alejandra.jpg', './assets/Alejandra/Fotografía Juan Camilo... ¿Barrera_- Alejandra.jpg'],
-      //audio: [{file: "./assets/Alejandra/FragmentoPoemario-JuanCamilo…¿Barrera.mp3", nombre:"Juan Camilo … ¿Barrera?, 2025", desc:"Fragmento Poemario (voz de Alejandra Viteri)"}]
+      foto: "./assets/Liliana/FotoPortada.jpg",
+      galeria: ['./assets/Liliana/SAL1.jpg', './assets/Liliana/SAL.jpg', './assets/Liliana/ROSA A FUEGO LENTO.jpg', './assets/Liliana/QUILLA RAIMY.jpg', './assets/Liliana/QUILLA RAYMI(1).jpg', './assets/Liliana/LA CENIZA DE LOS PARPADOS.jpg', './assets/Liliana/CIUDAD PLASTIFICADA.jpg', './assets/Liliana/AL DIABLO CON EL DIABLO.jpg'],
+      audio: [{file: "./assets/Liliana/AUDIO-FRAGMENTO-A-FUEGO-LENTO.mp3", nombre:"A Fuego Lento, 2021", desc:"Fragmento (voz de Liliana Timaná)"}]
     },
 
     {
