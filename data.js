@@ -269,7 +269,7 @@ perfil: "Licenciada en Filosofía y Letras y artista investigadora de la ciudad 
     {
       url: "leidy",
       nombre: "Leidy Johana Hidalgo Salas",
-      experiencia: 4,
+      experiencia: 6,
       nacimientoLugar: "Pasto, Nariño",
       nacimientoFecha: 1994,
       residencia: "Pasto, Nariño",

@@ -283,6 +283,9 @@ hr{
     .popup{
         grid-template-columns: 1fr;
     }
+    .popup-city{
+        display: none;
+    }
 }
 #popup-content{
     text-align: left;
