@@ -1,9 +1,25 @@
+:root {
+    --color-background-dark: #301f44;
+    --color-background-light: #472a49;
+    --color-background-popup: #271f44;
+    --color-border-popup: #ffffff3b;
+    --color-background-casita: #f2e4e3;
+    --color-secondary-casita:#cec4dd;
+    --color-primary: #773a54; 
+    --text-primary: #fffaff;
+    --text-secondary: #a996c5;
+    --color-secondary-light: #5b325e;    
+    --color-footer: #896ab0; 
+    --color-scrollbar-track: #d7c6d4;
+    --color-scrollbar-thumb: #a1536d;
+}
+
 body{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     text-align: center;
-    color: #fffaff;
+    color: var(--text-primary);
     font-family: 'Quicksand', serif;
     overflow-x: hidden;
 }
@@ -38,12 +54,12 @@ h3{
 /*----------------------*/
 nav{
     height: 70px;
-    background-color: #271f44;
+    background-color: var(--color-background-dark);
     position: relative;
     z-index: 10;
 }
 #nav2{
-    background-color: #773a54;
+    background-color: var(--color-primary);
 }
 
 .nav-list {
@@ -77,28 +93,29 @@ section{
     padding: 10px 0 0 0;
 }
 .content-title{
+    padding-top: 5vh;
     height: 15vh;
 }
 .content-desc{
-    height: 10vh;
-    background-color: #9f516f;
+    height: 15vh;
+    background-color: var(--color-primary);/*#9f516f;*/ 
     font-size: 18px;
     display: grid;
     place-items: center;
     font-size: 16px;
 }
 .content-desc-border{
-    background-color: #ae96c7;
+    background-color: var(--text-secondary);
     height: 100%;
     display: grid;
     place-items: center;
     width: 80%;
 }
 .desc2{
-    background-color: #783954;
+    background-color: var(--color-secondary-light);
 }
 .content-desc-border-2{
-    background-color: #a05170;
+    background-color: var(--color-primary);
     height: 100%;
     display: grid;
     place-items: center;
@@ -109,8 +126,8 @@ section{
     margin: 0 15px 0 15px;
 }
 .content-info{
-    height: 75vh;
-    background-color: #271f44;
+    height: 65vh;
+    background-color: var(--color-background-dark);
     display: grid;
     place-items: center;
 }
@@ -118,60 +135,135 @@ section{
     height: 100%;
 }
 
+@media screen and (max-width: 600px) {
+    .content-desc{
+        font-size: 14px;
+    }
+    .content-desc-border-2{
+        width: 95%;
+    }
+}
+
 /*-------------------------*/
 /*--------Portada---------*/
 /*-----------------------*/
 #portada{
     height: 90vh;
-    background-color: #896ab0;
+    background-color: var(--color-background-light);
 }
 #banner{
     width: 100%;
     height: auto;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 #portada-info{
-    background-color: #271f44;
+    background-color: var(--color-background-dark);
     padding: 25px;
     margin: 30px 15vw 10px 15vw;
     border-radius: 10px;
     font-size: 18px;
     border-style: solid;
-    border-color: #783e57;
+    border-color: var(--color-primary);
     border-width: 1px;
 }
 #portada-txt{
-    margin: -30px 0 0 0;
+    margin: -20px 0 0 0;
 }
 #portada-img{
     height: 6vw;
     width: auto;
 }
-@media screen and (max-width: 350px) {
-    #portada-txt{
-        font-size: 16px;
-    }
-}
+
 #portada-title{
     font-size: 38px;
     margin-top: -45px;
     font-weight: lighter;
 }
 
+@media screen and (max-width: 690px) {
+    #portada-txt{
+        font-size: 16px;
+    }
+
+    #portada-title{
+        font-size: 30px;
+        margin-top: -35px;
+    }
+
+    #portada-info{
+        padding: 20px;
+        margin: 30px 10vw 10px 10vw;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #portada-txt{
+        font-size: 15px;
+    }
+
+    #portada-title{
+        font-size: 24px;
+        margin-top: -35px;
+    }
+
+    #portada-info{
+        padding: 15px;
+        margin: 30px 5vw 10px 5vw;
+    }
+}
 
 /*--------------------*/
 /*------ Mapa -------*/
 /*------------------*/
 #territorio{
-    background-color: #896ab0;
+    background-color: var(--color-background-light);
 }
 #mapa{
     width: 90%;
-    height: 70vh;
+    height: 65vh;
 }
 .map{
     background-image: url("./assets/BASE-MAPA-WEB-VOCES-DE-MUJ-ESCENA.jpg");
     background-size: 100% 100%;
+}
+
+/*-------------------------*/
+/*------ Encuentro -------*/
+/*-----------------------*/
+
+#encuentro{
+    padding: 0;
+    background-color: var(--color-background-light);
+    position: relative;
+    text-align: center;
+}
+
+#encuentro-container{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2vh;
+}
+
+#encuentro a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+#encuentro-img{
+    height: 62vh; 
+    width: auto; 
+    border-radius: 2%;
+    flex-shrink: 0;
+}
+
+#encuentro .content-title{
+    background-color: var(--color-background-dark);
 }
 
 /*----------------------*/
@@ -181,7 +273,7 @@ section{
     padding: 0 20px 0 20px;
 }
 #tiempo{
-    background-color: #271f44;
+    background-color: var(--color-background-light);
     position: relative;
 }
 .time{
@@ -205,7 +297,7 @@ section{
     margin-top: -4vh;
 }
 .time-card{
-    background-color: #a996c5;
+    background-color: var(--text-secondary);
     height: 300px;
     width: 150px;
     border-radius: 12px;
@@ -226,14 +318,14 @@ section{
 .time-year{
     margin: 0 0 -20px 0;
     font-size: 60px;
-    color: #a996c5;
+    color: var(--text-secondary);
 }
 hr{
     position: absolute;
     margin: 0;
     width: 98vw;
-    bottom: 9vh;
-    border-color: #a996c5;
+    bottom: 5vh;
+    border-color: var(--text-secondary);
     border-width: 2px;
     border-style: solid;
 }
@@ -256,7 +348,7 @@ hr{
 }
 .underlay{
     position: relative;
-    background: #ffffff3b;
+    background: var(--color-border-popup);
     border-radius: 10px 0 0 10px;
     text-align: center;
     max-width: 800px;
@@ -270,7 +362,7 @@ hr{
 /* Centered popup box */
 .popup{
     position: relative;
-    background: #271f44;
+    background: var(--color-background-popup);
     border-radius: 10px 0 0 10px;
     text-align: center;
     max-width: 800px;
@@ -292,7 +384,7 @@ hr{
     padding: 20px 30px 20px 30px;
 }
 #popup-img{
-    background-color:#a996c5;
+    background-color:var(--text-secondary);
     background-position: center;
     background-size: cover;
 }
@@ -396,7 +488,7 @@ hr{
     height: calc(100vh - 70px);
     margin: 0;
     padding: 0;
-    background-color: #f2e4e3;
+    background-color: var(--color-background-casita);
     font-family: 'Quicksand', serif;
 }
 
@@ -419,12 +511,12 @@ hr{
     display: grid;
     align-items: center; 
     overflow: hidden;
-    color: #cdcdcd;
+    color: var(--color-secondary-casita);
     padding: 0 10% 0 10%;
 }
 
 .side-data{
-    color: #271f44;
+    color: var(--color-background-popup);
     overflow-y: scroll;
 }
 
@@ -434,7 +526,7 @@ hr{
     position: sticky;
     z-index: 9;
     top: 0px;
-    background-color: #f2e4e3;
+    background-color: var(--color-background-casita);
     padding-top: 8vh;
     padding: 8vh 10% 2vh 10%;
 }
@@ -445,10 +537,10 @@ hr{
 }
 .data-info-galeria{
     padding: 6vh 10% 6vh 10%;
-    background-color: #9f516f;
+    background-color: var(--color-scrollbar-thumb);
 }
 .data-info-obras{
-    background-color: #cec4dd;
+    background-color: var(--color-secondary-casita);
     display: grid;
     grid-template-columns: 1fr 2fr;
     padding: 6vh 10% 6vh 10%;
@@ -459,7 +551,7 @@ hr{
     height: auto;
 }
 .obras-title{
-    color: #773a54;
+    color: var(--color-primary);
     text-indent: 15px;
 }
 
@@ -495,6 +587,10 @@ hr{
     .casita-side{
         grid-column: 1; /* Spans across both columns */
     }
+
+    .nav-list {
+        gap: 0vw;
+    }
 }
 
 
@@ -504,8 +600,13 @@ hr{
 /*------ Footer -------*/
 /*--------------------*/
 footer{
-    padding: 15px;
-    background-color: #896ab0;
+    padding: 20px 10px;
+    background-color: var(--color-footer);
+    min-height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
 }
 
 
@@ -518,16 +619,16 @@ footer{
 }
 
 ::-webkit-scrollbar-track {
-    background: #d7c6d4; /* Track color */
+    background: var(--color-scrollbar-track); /* Track color */
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #a1536d; /* Thumb color */
+    background: var(--color-scrollbar-thumb); /* Thumb color */
     border-radius: 10px; /* Rounded corners for the thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Darker color on hover */
+    background: var(--color-footer); /* Darker color on hover */
 }
 
 /*------------------------*/

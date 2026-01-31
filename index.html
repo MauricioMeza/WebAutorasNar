@@ -26,6 +26,11 @@
                 </a>
             </li>
             <li>
+                <a href="index.html#encuentro">
+                    <img class="nav-btn" src="./assets/BOTON-ENCUENTRO.png" alt="Encuentro">
+                </a>
+            </li>
+            <li>
                 <a href="index.html#tiempo">
                     <img class="nav-btn" src="./assets/BOTON-TIEMPO.png" alt="Tiempo">
                 </a>
@@ -37,14 +42,13 @@
     <!------------PORTADA-BANNER------------>
     <!-------------------------------------->
     <section id="portada">
-        <img id="banner" src="./assets/BANNER-PORTADA-WEB-sin-logos.jpg">
+        <img id="banner" src="./assets/BANNER-VME-2026.png">
         <div id="portada-txt-border">
             <div id="portada-info">
-                <h1 id="portada-title">Dramaturgas de Nariño</h1>
-                <p id="portada-txt">Este es un espacio interactivo donde convergen las voces, palabras y pensamientos de mujeres dramaturgas. Adéntrate en sus historias, emociones y visiones capturadas a través de textos, videos, fotografías y más, en un recorrido que refleja la creación y la potencia que nutren el teatro nariñense.</p>
+                <h1 id="portada-title">Voces de mujeres en escena</h1>
+                <p id="portada-txt"><strong>Archivo vivo, interactivo y expandido de dramaturgas nariñenses.</strong> <br> <br> Este es un espacio interactivo donde convergen las voces, palabras y pensamientos de mujeres dramaturgas de Nariño. Un archivo vivo que no busca cerrar ni fijar sus trayectorias, sino habilitar un encuentro sensible con sus historias, emociones y visiones, compartidas a través de textos, audios, videos, fotografías y otros materiales. <br> <br> El recorrido propone una mirada situada sobre los procesos de creación que nutren, sostienen y transforman el teatro nariñense desde el territorio.</p>
             </div>
         </div>
-        <img id="portada-img" src="./assets/PORTADA-WEB-VOCES-DE-MUJ-ESCENA-logos.png">
     </section>
 
     <!------------------------------------------>
@@ -55,14 +59,34 @@
         <div class="content-title">
             <img class="content-title-img" src="./assets/BOTON-TERRITORIO2.png">
         </div>
-        <div class="content-desc">
-            <span class="content-desc-border">
-                <p class="p-subtitle">Explora el mapa, y descubre la historia de cada mujer que ha liderado el teatro en Nariño</p>
+        
+        <div class="content-desc desc2">
+            <span class="content-desc-border-2">
+                <p class="p-subtitle">Este mapa ubica los lugares de residencia de las dramaturgas al momento de la construcción del archivo. Las ubicaciones no buscan señalar orígenes ni fijar identidades, sino reconocer los territorios desde donde hoy se vive, se escribe y se crea.</p>
             </span>
         </div>
         <div class="content-info map">
             <iframe id="mapa" src="https://www.google.com/maps/d/embed?mid=1lQwB2jesT8Vgy8RSisRuYCFiNpFnGUw&ehbc=2E312F"></iframe></iframe>
             <!--src="https://www.google.com/maps/d/embed?mid=1el_FtwRlLISqL3g54udxrzbvpdnL-Ww&ehbc=2E312F"-->
+        </div>
+    </section>
+
+    <!------------------------------------------->
+    <!-------------ENCUENTRO-SECCION------------->
+    <!------------------------------------------->
+    <section id="encuentro" class="section-content">
+        <div class="content-title">
+            <img class="content-title-img" src="./assets/BOTON-ENCUENTRO2.png">
+        </div>
+        <div class="content-desc desc2">
+            <span class="content-desc-border-2">
+                <p class="p-subtitle">El 4to Encuentro reunió a las dramaturgas del archivo y a la comunidad teatral local para celebrar y visibilizar sus voces y creaciones a través de diversas actividades como lecturas dramatizadas, talleres, conversatorios y presentaciones artísticas.</p>
+            </span>
+        </div>
+        <div id="encuentro-container">
+            <a href="https://www.instagram.com/reel/DNqstRNRy6X/?igsh=eW42OXpqZmxkNHZv">
+                <img id="encuentro-img" src="./assets/festival.jpeg">
+            </a>
         </div>
     </section>
 
@@ -75,7 +99,7 @@
         </div>
         <div class="content-desc desc2">
             <span class="content-desc-border-2">
-                <p class="p-subtitle">Esta línea temporal marca los puntos de partida dentro de este recorrido. Haz clic en cada dramaturga para conocer más.</p>
+                <p class="p-subtitle">Las dramaturgas se disponen en una secuencia que recorre distintas trayectorias, desde las más largas hasta las más recientes. <br> Al hacer clic en cada imagen, se accede a la información y a los materiales que conforman este archivo digital.</p>
             </span>
         </div>
         <div id="content-time" class="content-info time">
@@ -84,117 +108,102 @@
                 <span class="time-container">
                     <h3 class="time-year">1974</h3>
                     <img src="./assets/FOTO-OREJA.png" onclick="openPopup(0)" class="time-card">
-                    <img src="./assets/ICONO-DRAMATURGA-LINEA-DE-TIEMPO.png" class="time-icon">
                 </span>
             </div>
             <div>
                 <span class="time-container">
                     <h3 class="time-year">1981</h3>
                     <img src="./assets/FOTO-JAZMIN.png" onclick="openPopup(6)" class="time-card">
-                    <img src="./assets/ICONO-DRAMATURGA-LINEA-DE-TIEMPO.png" class="time-icon">
                 </span>
             </div>
             <div>
                 <span class="time-container">
                     <h3 class="time-year">1983</h3>
                     <img src="./assets/FOTO-BEATRIZ.png" onclick="openPopup(7)" class="time-card">
-                    <img src="./assets/ICONO-DRAMATURGA-LINEA-DE-TIEMPO.png" class="time-icon">
                 </span>
             </div>
             <div>
                 <span class="time-container">
                     <h3 class="time-year">1983</h3>
                     <img src="./assets/FOTO-LILIANA.png" onclick="openPopup(11)" class="time-card">
-                    <img src="./assets/ICONO-DRAMATURGA-LINEA-DE-TIEMPO.png" class="time-icon">
                 </span>
             </div>
             <div>
                 <span class="time-container">
                     <h3 class="time-year">1984</h3>
                     <img src="./assets/FOTO-SINTIA.png" onclick="openPopup(12)" class="time-card">
-                    <img src="./assets/ICONO-DRAMATURGA-LINEA-DE-TIEMPO.png" class="time-icon">
                 </span>
             </div>
             <div>
                 <span class="time-container">
                     <h3 class="time-year">1988</h3>
                     <img src="./assets/FOTO-ELIANA.png" onclick="openPopup(14)" class="time-card">
-                    <img src="./assets/ICONO-DRAMATURGA-LINEA-DE-TIEMPO.png" class="time-icon">
                 </span>
             </div>
             <div>
                 <span class="time-container">
                     <h3 class="time-year">1989</h3>
                     <img src="./assets/FOTO-DIANA.png" onclick="openPopup(10)" class="time-card">
-                    <img src="./assets/ICONO-DRAMATURGA-LINEA-DE-TIEMPO.png" class="time-icon">
                 </span>
             </div>
             <div>
                 <span class="time-container">
                     <h3 class="time-year">1992</h3>
                     <img src="./assets/FOTO-ALEJANDRA.png" onclick="openPopup(1)" class="time-card">
-                    <img src="./assets/ICONO-DRAMATURGA-LINEA-DE-TIEMPO.png" class="time-icon">
                 </span>
             </div>
             <div>
                 <span class="time-container">
                     <h3 class="time-year">1992</h3>
                     <img src="./assets/FOTO-MERCEDES.png" onclick="openPopup(15)" class="time-card">
-                    <img src="./assets/ICONO-DRAMATURGA-LINEA-DE-TIEMPO.png" class="time-icon">
                 </span>
             </div>
             <div>
                 <span class="time-container">
                     <h3 class="time-year">1993</h3>
                     <img src="./assets/FOTO-FERNANDA.png" onclick="openPopup(3)" class="time-card">
-                    <img src="./assets/ICONO-DRAMATURGA-LINEA-DE-TIEMPO.png" class="time-icon">
                 </span>
             </div>
             <div>
                 <span class="time-container">
                     <h3 class="time-year">1993</h3>
                     <img src="./assets/FOTO-CONSTANZA.png" onclick="openPopup(13)" class="time-card">
-                    <img src="./assets/ICONO-DRAMATURGA-LINEA-DE-TIEMPO.png" class="time-icon">
                 </span>
             </div>
             <div>
                 <span class="time-container">
                     <h3 class="time-year">1994</h3>
                     <img src="./assets/FOTO-SILVIA.png" onclick="openPopup(2)" class="time-card">
-                    <img src="./assets/ICONO-DRAMATURGA-LINEA-DE-TIEMPO.png" class="time-icon">
                 </span>
             </div> 
             <div>
                 <span class="time-container">
                     <h3 class="time-year">1994</h3>
                     <img src="./assets/FOTO-LEIDY.png" onclick="openPopup(8)" class="time-card">
-                    <img src="./assets/ICONO-DRAMATURGA-LINEA-DE-TIEMPO.png" class="time-icon">
                 </span>
             </div>            
             <div>
                 <span class="time-container">
                     <h3 class="time-year">1996</h3>
                     <img src="./assets/FOTO-BRIGITTE.png" onclick="openPopup(4)" class="time-card">
-                    <img src="./assets/ICONO-DRAMATURGA-LINEA-DE-TIEMPO.png" class="time-icon">
                 </span>
             </div>
             <div>
                 <span class="time-container">
                     <h3 class="time-year">1997</h3>
                     <img src="./assets/FOTO-CAROLINA.png" onclick="openPopup(5)" class="time-card">
-                    <img src="./assets/ICONO-DRAMATURGA-LINEA-DE-TIEMPO.png" class="time-icon">
                 </span>
             </div>
             <div>
                 <span class="time-container">
                     <h3 class="time-year">1998</h3>
                     <img src="./assets/FOTO-MARIA.png" onclick="openPopup(9)" class="time-card">
-                    <img src="./assets/ICONO-DRAMATURGA-LINEA-DE-TIEMPO.png" class="time-icon">
                 </span>
             </div>  
         </div>
     </section>
 
+    
     <!------------------------------------>
     <!---------------POP-UP--------------->
     <!------------------------------------>
@@ -234,7 +243,7 @@
     <!---------------FOOTER--------------->
     <!------------------------------------>
     <footer>
-        Una plataforma de + Mujeres + Arte + Cultura
+        Una plataforma de + Mujeres + Arte + Cultura... Las tablas quedan abiertas.
     </footer>
 
     <script src="./data.js"></script> 
