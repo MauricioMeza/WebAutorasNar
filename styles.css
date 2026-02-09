@@ -83,6 +83,13 @@ nav{
     height: auto;
 }
 
+@media screen and (max-width: 300px) {
+
+    .nav-list {
+        display: none;
+    }
+}
+
 /*--------------------------*/
 /*--------Sections---------*/
 /*------------------------*/
@@ -91,6 +98,7 @@ section{
     width: 100%;
     height: 100vh;
     padding: 10px 0 0 0;
+    overflow: hidden;
 }
 .content-title{
     padding-top: 5vh;
