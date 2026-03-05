@@ -158,6 +158,9 @@ section{
 #portada{
     height: 90vh;
     background-color: var(--color-background-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #banner{
     width: 100%;
@@ -264,7 +267,7 @@ section{
 }
 
 #encuentro-img{
-    height: 62vh; 
+    height: 60vh; 
     width: auto; 
     border-radius: 2%;
     flex-shrink: 0;

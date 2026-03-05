@@ -18,9 +18,11 @@ const botonRes = document.getElementById("casita-btn");
 
 function openPopup(index) {
     document.querySelector('.overlay').style.display = 'flex';
+    const currentYear = new Date().getFullYear();
+    yearsSince2025 = currentYear - 2025
     try{
       nombrRes.innerHTML = data[index].nombre;
-      exprcRes.innerHTML = "Caminar Dramaturgico - <b>" + data[index].experiencia + " Años</b>";
+      exprcRes.innerHTML = "Caminar Dramaturgico - <b>" + (data[index].experiencia + yearsSince2025) + " Años</b>";
       areasRes.innerHTML = "Areas - <b>" + truncateString(data[index].areas, 85) + "</b>";
       prfilRes.innerHTML = truncateString(data[index].perfil, 275);
       nacmtRes.innerHTML = "Nacimiento, <b>" + data[index].nacimientoLugar + "</b>, " + data[index].nacimientoFecha;

@@ -19,13 +19,14 @@ const audiosAutora = document.getElementById('audios');
 const params = new URLSearchParams(window.location.search);
 const url = params.get('nombre');
 autoraIndex = data.findIndex(item => item.url === url);
-
+const currentYear = new Date().getFullYear();
+yearsSince2025 = currentYear - 2025;
 
 //----- Info Data General -------
 nomeAutora.innerHTML = data[autoraIndex].nombre;
 refrnAutora.innerHTML = 'Nacimiento - <b>' + data[autoraIndex].nacimientoLugar + '</b> ' + data[autoraIndex].nacimientoFecha + '<br>' +
                         'Residencia - <b>' +  data[autoraIndex].residencia + '</b>';
-exprnAutora.innerHTML = 'Caminar Dramaturgico - <b>' + data[autoraIndex].experiencia + ' Años</b>';
+exprnAutora.innerHTML = 'Caminar Dramaturgico - <b>' + (data[autoraIndex].experiencia + yearsSince2025) + ' Años</b>';
 areasAutora.innerHTML = '<b>' + data[autoraIndex].areas + '</b>';
 
 //----- Info Data Descripcion -------
